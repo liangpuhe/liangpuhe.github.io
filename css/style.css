@@ -50,17 +50,17 @@ video {
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bf3a30;
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #C1CAC0;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .dot-active, .dot:hover {
-  background-color: #bf3a30;
+  background-color: #535D52;
   opacity: 0.6;
 }
 
