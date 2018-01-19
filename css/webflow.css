@@ -482,15 +482,18 @@ textarea.w-select {
 .w-hidden-main {
   display: none !important;
 }
-@media screen and (max-width: 991px) {
-  .w-container {
-    max-width: 728px;
-  }
+@media screen and (max-width: 767px) {
   .w-col {
     width: 100%;
     left: auto;
     right: auto;
   }
+}
+@media screen and (max-width: 991px) {
+  .w-container {
+    max-width: 728px;
+  }
+
   .w-hidden-main {
     display: inherit !important;
   }
