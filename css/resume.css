@@ -7,7 +7,7 @@
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: #868e96;
+  color: #696C6F;
 }
 
 @media (min-width: 992px) {
@@ -18,9 +18,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Abril Fatface', serif;
   font-weight: 700;
-  text-transform: uppercase;
   color: #343a40;
 }
 
@@ -218,6 +217,12 @@ section.resume-section .resume-item .resume-date {
 
 .text-primary {
   color: #BD5D38 !important;
+}
+
+#experience {
+  /* background-color: #E6D6CA; */
+  background-color: #E5DCCD;
+  margin-right: 2.5rem;
 }
 
 a {
