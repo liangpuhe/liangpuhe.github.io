@@ -157,7 +157,7 @@ blockquote {
 .navigation-link {
   padding-top: 7px;
   padding-bottom: 7px;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: "Gurmukhi MN", Helvetica, sans-serif;
   color: #bec3c7;
   font-size: 12px;
   line-height: 18px;
@@ -167,6 +167,7 @@ blockquote {
 
 .navigation-link:hover {
   color: #333;
+  text-decoration: none;
 }
 
 .navigation-link:focus {
@@ -1102,17 +1103,17 @@ blockquote {
 .blog-desc {
   width: 824px;
   margin-bottom: 50px;
-  font-family: Bitter, serif;
-  color: rgba(93, 93, 93, .7);
-  font-size: 17px;
-  line-height: 23px;
+  font-family: Lato, serif;
+  color: rgba(93, 93, 93, 0.85);
+  font-size: 20px;
+  line-height: 26px;
   font-style: italic;
   font-weight: 400;
   text-align: justify;
 }
 
 .brand-text {
-  font-family: Lato, sans-serif;
+  font-family: "Gurmukhi MN", sans-serif;
   color: #d4d4d4;
   font-size: 33px;
   line-height: 36px;
@@ -1161,7 +1162,7 @@ blockquote {
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
   color: rgba(0, 0, 0, .82);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 31px;
   font-weight: 400;
 }
@@ -1173,7 +1174,7 @@ blockquote {
   padding-top: 0px;
   float: none;
   clear: none;
-  font-family: 'PT Sans', sans-serif;
+  font-family: Lato, sans-serif;
   color: #000;
   font-size: 18px;
   line-height: 25px;
@@ -1187,10 +1188,10 @@ blockquote {
   padding-top: 0px;
   float: none;
   clear: none;
-  font-family: 'PT Sans', sans-serif;
+  font-family: Lato, sans-serif;
   color: #000;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 25px;
   font-weight: 400;
   letter-spacing: 0px;
   text-indent: 0px;
