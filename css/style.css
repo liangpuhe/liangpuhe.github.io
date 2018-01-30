@@ -3,6 +3,13 @@ video {
   box-shadow: 0 22px 53px rgba(0, 0, 0, 0.35);
 }
 
+body {
+  position: relative;
+}
+
+#navDots {
+  position: fixed !important;
+}
 .brand-link:hover {
   text-decoration: none;
 }
@@ -99,4 +106,83 @@ video {
   position: relative;
   margin: auto;
   display: block;
+}
+
+/* .side-dot {
+  position: relative;
+  top: 8px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #EDD3C1 !important;
+  transform-origin: 50% 50%;
+} */
+
+
+.side-nav-dots ul {
+  z-index: 100;
+  position: fixed;
+  right: 2%;
+  display: inline-block;
+  float: right;
+  margin-top: 30%;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.side-nav-dots li {
+  position: relative;
+  display: block;
+  /* float: left; */
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.side-nav-dots li a {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  outline: none;
+  border-radius: 100%;
+  background-color: #fff;
+  background-color: #C1CAC0;
+  /* text-align: right; */
+  font-size: 12px;
+  text-indent: -999rem;
+  /* make the text accessible to screen readers */
+  cursor: pointer;
+  position: absolute;
+  padding: 0px !important;
+}
+
+.dotstyle-scaleup li a {
+  -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #535D52;
+}
+
+.dotstyle-scaleup li a:hover, .dotstyle-scaleup li a:focus{
+  background-color: #535D52;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.active a {
+  background-color: #535D52 !important;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.dotstyle-scaleup li.current a {
+  background-color: #535D52;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
