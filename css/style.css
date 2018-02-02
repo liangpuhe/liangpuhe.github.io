@@ -101,6 +101,7 @@ body {
   opacity: 0.6;
 }
 
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -123,6 +124,7 @@ body {
   position: fixed;
   right: 2%;
   display: inline-block;
+  /* display: none; */
   float: right;
   margin-top: 30%;
   padding: 0;
@@ -145,7 +147,7 @@ body {
   cursor: pointer;
 }
 
-.side-nav-dots li a {
+.side-nav-dots li a, .side-nav-dots li a:focus {
   top: 0;
   left: 0;
   width: 50%;
@@ -154,35 +156,56 @@ body {
   border-radius: 100%;
   background-color: #fff;
   background-color: #C1CAC0;
-  /* text-align: right; */
+  text-align: right;
   font-size: 12px;
-  text-indent: -999rem;
+  text-indent: -10rem;
   /* make the text accessible to screen readers */
   cursor: pointer;
   position: absolute;
   padding: 0px !important;
 }
 
-.dotstyle-scaleup li a {
+.side-nav-dots li a span {
+  display: none;
+}
+
+.side-nav-dots li a:hover span{
+  display: block;
+}
+
+.side-nav-dots .active a span{
+  display: none;
+}
+
+.dot-text {
+  position: relative;
+  right: 30px;
+}
+
+.side-nav-dots li a {
   -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease;
   color: #535D52;
 }
 
-.dotstyle-scaleup li a:hover, .dotstyle-scaleup li a:focus{
+.side-nav-dots li a:hover{
   background-color: #535D52;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-.active a {
+.side-nav-dots .active a {
   background-color: #535D52 !important;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-.dotstyle-scaleup li.current a {
-  background-color: #535D52;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+#navDots {
+  display: none;
+}
+
+@media (max-width: 769px){
+  #navDots {
+    display: none !important;
+  }
 }

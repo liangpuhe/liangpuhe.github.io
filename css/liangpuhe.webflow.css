@@ -1006,6 +1006,7 @@ blockquote {
   background-size: 700px auto;
   background-color: #D23930;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .blog-header-GoA {
@@ -1014,6 +1015,7 @@ blockquote {
   background-size: 700px auto;
   background-color: #4A90E2;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .blog-header-log {
@@ -1022,6 +1024,7 @@ blockquote {
   background-size: auto, cover;
   background-color: #D23930;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .blog-header-div.ubi {
@@ -1184,6 +1187,7 @@ blockquote {
   letter-spacing: 0px;
   text-indent: 0px;
 }
+
 .blog-content-under {
   display: block;
   margin-bottom: 20px;
@@ -1297,18 +1301,18 @@ blockquote {
 }
 
 .seq {
-    margin-right: 5px;
-    color: #D63913;
-    font-size: 17px;
-    font-weight: 700;
+  margin-right: 5px;
+  color: #D63913;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .ubi {
-    color: #e69ba7;
+  color: #e69ba7;
 }
 
 .exh {
-    color: #44b6a7;
+  color: #44b6a7;
 }
 
 .caption {
