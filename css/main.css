@@ -1,0 +1,265 @@
+.under-construction {
+    background-image: url('../img/construction.jpeg');
+    color: white;
+}
+.under-construction h2{
+    font-size: 40px;
+}
+footer .fa {
+    font-size: 30px;
+}
+footer .fa-facebook:hover {
+    color: #3B5998 !important;
+    text-decoration: none;
+}
+footer .fa-twitter:hover {
+    color: #55ACEE !important;
+    text-decoration: none;
+}
+footer .fa-github:hover {
+    color: black !important;
+    text-decoration: none;
+}
+.intro {
+    left: -100px;
+    height: 100%;
+    background: #bf3a30;
+    overflow: hidden;
+    animation: slide 0.9s forwards;
+    color: whitesmoke;
+    padding: 20px 0 20px 20px;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.jumbotron {
+    background: none !important;
+    padding-left: 0 !important;
+}
+
+.btn-outline-primary {
+    border-color: #bf3a30;
+    color: #bf3a30;
+}
+
+.btn-outline-primary:hover {
+    background-color: #bf3a30;
+    color: whitesmoke;
+    border-color: #bf3a30;
+}
+
+.fade-in {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.curtain {
+    background-color: white;
+    fill: #cc6159;
+    border: none;
+}
+.card-img-top {
+}
+
+.card-title,
+.card-text {
+    color: whitesmoke;
+}
+
+.card h2 {
+    font-size: 22px;
+}
+.card:hover h2 {
+    transform: translateY(-7px);
+    transition: 0.8s
+}
+
+.card:hover .card-text {
+    opacity: 0;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    position: relative;
+    display: block;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.img-design {
+    height: 500px;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    opacity: 0.5 !important;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: #bf3a30;
+    opacity: 0.8;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #bf3a30;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bf3a30;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-active,
+.dot:hover {
+    background-color: #bf3a30;
+    opacity: 0.6;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 400px) {
+    .prev,
+    .next {
+        font-size: 11px;
+    }
+    .numbertext {
+        display: none;
+    }
+    .img-design {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    path {
+        display: none;
+    }
+    .card h4 {
+        transform: translateY(-7px);
+    }
+    .card-text {
+        display: none;
+    }
+    .profile {
+        display: block;
+    }
+    .dot {
+        display: none;
+    }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Infographic</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/liangpuhe.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <link href="css/d3.geomap.css" rel="stylesheet">
+  <link href="css/infographic.css" rel="stylesheet">
+  <link href="css/animation.css" rel="stylesheet">
+
+  <script src="js/snap.svg-min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <!-- <div class="navigation-bar w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+      <div class="w-container"><a class="brand-link w-nav-brand" href="index.html"><h1 class="brand-text home-brand-text">Puhe Liang</h1></a>
+        <nav class="navigation-menu w-nav-menu" role="navigation"><a class="navigation-link w-nav-link" href="Puhe Liang.pdf" target="_blank">resume</a>
+        </nav>
+        <div class="hamburger-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div> -->
+  <nav class="container navbar navbar-expand-lg navbar-light bg-yakult fixed-top">
+    <div class="container">
+      <a class="navbar-brand my-2" href="index.html">Puhe Liang</a>
+    </div>
+  </nav>
+  <section class="container info-container-light-1 pt-5">
+    <img class="w-25 mx-auto d-block pt-5 mt-5" src="img/yakult_header.png" alt="Yakult heading">
+  </section>
+
+  <section class="container info-container-red-1">
+    <div class="clearfix">
+      <h1 class="float-sm-right info-h2 info-red-header">Anatomy</h1>
+    </div>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-9">
+        <img id="info-yakult" class="mx-auto pt-4 d-block" onmouseenter="changePic(this)" onmouseleave="changeBack(this)" src="img/yakult.png" alt="Yakult picture">
+      </div>
+      <div class="col">
+      </div>
+    </div>
+
+  </section>
+  <section class="container info-container-light-2 clearfix">
+    <div class="clearfix">
+      <h1 class="float-sm-right info-h2 info-light-header">Differnt Sizes</h1>
+    </div>
+    <div id="dataMap" class="info-map d-block mx-auto"></div>
+    <div class="info-legend">
+      <div><img class="info-legend-img" src="img/none_color.png"><a>unknown</a></div>
+      <div><img class="info-legend-img" src="img/60_color.png"><a>60ml</a></div>
+      <div><img class="info-legend-img" src="img/80_color.png"><a>80ml</a></div>
+      <div><img class="info-legend-img" src="img/100_color.png"><a>100ml</a></div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <p class="text-center">
+        <p class="m-0 text-center text-dark">Copyright &copy; Puhe Liang 2018</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/d3.geomap.dependencies.min.js"></script>
+  <script src="js/d3.geomap.min.js"></script>
+  <script src="js/datamaps.world.min.js"></script>
+  <script>
+    function myMap() {
+      var dataMap = new Datamap({
+        element: document.getElementById('dataMap'),
+        projection: 'mercator',
+        height: 550,
+        width: 820,
+        geographyConfig: {
+          highlightOnHover: true,
+          popupOnHover: true,
+          borderColor: '#f8ede1',
+          highlightFillColor: '#d7ac82',
+          highlightBorderColor: '#d7ac82',
+          borderWidth: 0.1,
+        },
+        fills: {
+          defaultFill: '#d9b4b7',
+          large: '#b33241',
+          small: '#f9b4bb',
+          normal: '#f26978',
+        },
+        data: {
+          NZL: {
+            fillKey: "small"
+          },
+          AUS: {
+            fillKey: "small"
+          },
+          IND: {
+            fillKey: "small"
+          },
+          IDN: {
+            fillKey: "small"
+          },
+          VNM: {
+            fillKey: "small"
+          },
+          DEU: {
+            fillKey: "small"
+          },
+          FRA: {
+            fillKey: "small"
+          },
+          UKR: {
+            fillKey: "small"
+          },
+          ITA: {
+            fillKey: "small"
+          },
+          CHE: {
+            fillKey: "small"
+          },
+          MLT: {
+            fillKey: "small"
+          },
+          ESP: {
+            fillKey: "small"
+          },
+          NLD: {
+            fillKey: "small"
+          },
+          GRC: {
+            fillKey: "small"
+          },
+          GBR: {
+            fillKey: "small"
+          },
+          POL: {
+            fillKey: "small"
+          },
+          NOR: {
+            fillKey: "small"
+          },
+          ISL: {
+            fillKey: "small"
+          },
+          CZE: {
+            fillKey: "small"
+          },
+          AUT: {
+            fillKey: "small"
+          },
+          PRT: {
+            fillKey: "small"
+          },
+          SWE: {
+            fillKey: "small"
+          },
+          DNK: {
+            fillKey: "small"
+          },
+          BEL: {
+            fillKey: "small"
+          },
+          FIN: {
+            fillKey: "small"
+          },
+          CYP: {
+            fillKey: "small"
+          },
+          HRV: {
+            fillKey: "small"
+          },
+          MCO: {
+            fillKey: "small"
+          },
+          HUN: {
+            fillKey: "small"
+          },
+          CHN: {
+            fillKey: "large"
+          },
+          SGP: {
+            fillKey: "large"
+          },
+          TWN: {
+            fillKey: "large"
+          },
+          HKG: {
+            fillKey: "large"
+          },
+          MEX: {
+            fillKey: "normal"
+          },
+          JPN: {
+            fillKey: "normal"
+          },
+          THA: {
+            fillKey: "normal"
+          },
+          PHL: {
+            fillKey: "normal"
+          },
+          MYS: {
+            fillKey: "normal"
+          },
+          USA: {
+            fillKey: "normal"
+          },
+        }
+      });
+    }
+
+    function changePic(image) {
+      image.src = "img/yakult_annotated.png";
+    }
+
+    function changeBack(image) {
+      image.src = "img/yakult.png"
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQbaEUZp5KQ6g1yyNvUMf4sk8m1R-yF5Q&callback=myMap"></script>
+  <script>
+    $(function() {
+      $('#info-yakult').hover(function() {
+        $('#annotated-yakult').show();
+      }, function() {
+        // on mouseout, reset the background colour
+        $('#annotated-yakult').hide();
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

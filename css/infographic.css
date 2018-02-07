@@ -1,0 +1,64 @@
+.bg-yakult {
+    background: #f8ede1;
+    opacity: 0.7;
+}
+.info-nav-bg {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.info-container-light-1 {
+    background-color: #f8ede1;
+    height: 250px;
+}
+.info-container-red-1 {
+    background-color: #ee383e;
+    height: 650px;
+}
+.info-container-light-2 {
+    background-color: #f8ede1;
+    height: 650px;
+}
+.info-div-center {
+    position: absolute;
+    left: 50%;
+}
+.info-img-center {
+    position: absolute;
+}
+.info-annotated {
+    display: none;
+}
+.info-map {
+    height: 550px;
+    width: 830px;
+}
+.info-containe-red-1 img {
+    position: relative;
+    left: -50%;
+}
+.info-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    padding: 10px 10px 0 0;
+}
+.info-red-header {
+    color: #ffc0d2;
+}
+.info-light-header {
+    color: #d7ac82;
+}
+.info-legend {
+  position: relative;
+  top: -15em;
+  color: #d7ac82;
+}
+
+.info-legend a {
+  position: relative;
+  top: -0.2em;
+  font-size: 18px;
+}
+
+.info-legend-img {
+  width: 1.3em;
+  margin: 0 1.5em 1.5em 1.5em;
+}
