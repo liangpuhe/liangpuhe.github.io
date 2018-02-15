@@ -37,10 +37,20 @@ h2 {
 }
 .text-hello {
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   font-weight: 400;
   text-align: center;
   font-family: "Gurmukhi MN", 'Open Sans', serif;
+  color: #C1CAC0;
+}
+
+.text-sub-hello {
+  font-family: "Gurmukhi MN", 'Open Sans', serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  padding-top: 0;
   color: #C1CAC0;
 }
 
@@ -61,7 +71,7 @@ h2 {
   padding: 1rem 0;
 }
 .intro>div {
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
 }
 
 .btn-resume {
