@@ -242,10 +242,10 @@ section.resume-section .resume-item .resume-date {
 }
 
 a {
-  color: #BD5D38;
+  color: #C1CAC0;
 }
 
 a:hover, a:focus, a:active {
   text-decoration: none;
-  color: #824027;
+  color: #C1CAC0;
 }
