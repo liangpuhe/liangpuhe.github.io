@@ -2,16 +2,17 @@
 var width = window.innerWidth,
     height = window.innerHeight;
 
-var redTranslate = "translate(380, 180)";
+var redTranslate = "translate(200, 180)";
 
 
   // append svg to the DIV
 d3.select(".chart").append("svg:svg")
-  .attr("width", 650)
-  .attr("height", 530);
+  .attr("width", 380)
+  .attr("height", 530)
+  .attr("class", "svg-arc");
 
 var render = function(dataset) {
-  vis = d3.select("svg");   // select the svg
+  vis = d3.select(".svg-arc");   // select the svg
 
     // set constants
   var PI = Math.PI;
@@ -74,7 +75,7 @@ var render = function(dataset) {
     // *** update red arcs -- using attrTeen and a custom tween function ***
   redArcs.transition()
       .duration(300)
-      .attr("fill", "rgb(255, 255, 255)")
+      .attr("fill", "rgb(242, 238, 235)")
       .attrTween("d", arc2Tween);         // using attrTween instead of attr here since
                                           //  attr interpolates linearly without taking
                                           //  in account the shape of the arc.
@@ -86,7 +87,7 @@ var render = function(dataset) {
   redArcs.enter().append("svg:path")
       .attr("class", "red-path")
       .attr("transform", redTranslate)
-      .attr("fill", "rgb(255, 255, 255)")
+      .attr("fill", "rgb(242, 238, 235)")
       .attr("d", drawArc)
       .each(function(d){
         this._current = d;
@@ -107,34 +108,34 @@ var initialize = function() {
   if(!d3.selectAll("circle.click-circle")[0].length) {    // if there is no click area..
 
     // making the click circle for red arcs
-    d3.select("svg").append("circle")
+    d3.select(".svg-arc").append("circle")
         .attr("class", 'click-circle')
         .attr("transform", redTranslate)
         .attr("r", arcMin*0.85)
         .attr("fill", "rgba(134, 214, 203, 1)");
-    d3.select("svg").append("text").text(function(d){return "2.7 fl.oz"})
+    d3.select(".svg-arc").append("text").text(function(d){return "2.7 fl.oz"})
     .attr("transform", redTranslate)
     .attr("class", 'text-circle')
     .attr("dy", ".35em")
-    .attr("fill", "rgb(255, 255, 255)");
-    d3.select("svg").append("text").text("Sugar")
+    .attr("fill", "rgb(242, 238, 235)");
+    d3.select(".svg-arc").append("text").text("Sugar")
     .attr("transform", redTranslate)
     .attr("class", 'text-path')
     .attr("dy", "-9em")
     .attr("dx", "1em")
-    .attr("fill", "rgb(255, 255, 255)");
-    d3.select("svg").append("text").text("Proteins")
+    .attr("fill", "rgb(242, 238, 235)");
+    d3.select(".svg-arc").append("text").text("Proteins")
     .attr("transform", redTranslate)
     .attr("class", 'text-path')
     .attr("dy", "-7.5em")
     .attr("dx", "1em")
-    .attr("fill", "rgb(255, 255, 255)");
-    d3.select("svg").append("text").text("Carbohyrates")
+    .attr("fill", "rgb(242, 238, 235)");
+    d3.select(".svg-arc").append("text").text("Carbohyrates")
     .attr("transform", redTranslate)
     .attr("class", 'text-path')
     .attr("dy", "-6em")
     .attr("dx", "1em")
-    .attr("fill", "rgb(255, 255, 255)");
+    .attr("fill", "rgb(242, 238, 235)");
   }
 }
 
