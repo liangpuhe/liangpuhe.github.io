@@ -17,6 +17,14 @@
     background-color: #f8ede1;
     height: 650px;
 }
+.info-container-red-nu {
+    background-color: #ee383e;
+    height: 570px;
+}
+.info-container-light-health {
+    background-color: #f8ede1;
+    height: 540px;
+}
 .info-div-center {
     position: absolute;
     left: 50%;
@@ -77,7 +85,12 @@
   color: rgb(242, 238, 235) !important;
   margin-bottom: 1.2em;
 }
-
+.info-body {
+  position: relative;
+  left: -30px;
+  top: -200px;
+  width: 85%;
+}
 .chart-rect {
   margin-left: 180px;
   margin-top: 70px;
