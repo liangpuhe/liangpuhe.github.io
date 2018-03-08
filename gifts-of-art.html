@@ -10,8 +10,20 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89169477-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-89169477-1');
+  </script>
+
 </head>
 
 <body data-spy="scroll" data-taget="#navDots" data-offset="0">
@@ -140,12 +152,14 @@
           <div class="blog-content-sub">
             <div class="blog-item mb-4"><strong class="seq">1.</strong> </br>
               <strong>Finding:  </strong> As the client claimed, searching art based on memory isn’t effective. We found that although patients’ painting requests are usually not fulfilled, they are still happy with an alternative choice. And according
-              to our interview, patient requests are not always specific.</br></br>
-              <strong>Recommendation:  </strong> We introduced crowd tagging feature, asking patients to tag the art using their language. In this way, the system would build connections between tags, so GoA
-              workers can search by patient-made tags, and find related paintings easily.
+              to our interview, patient requests are not always specific.</br>
+              </br>
+              <strong>Recommendation:  </strong> We introduced crowd tagging feature, asking patients to tag the art using their language. In this way, the system would build connections between tags, so GoA workers can search by patient-made tags, and
+              find related paintings easily.
             </div>
             <div class="blog-item mb-4"><strong class="seq">2.</strong> </br>
-              <strong>Finding:  </strong>By learning user work flow, we found changing art happens in several occasions. It can be a patient initiated request, or it is on volunteer's call. And the person who answers patient's requests can varies </br></br>
+              <strong>Finding:  </strong>By learning user work flow, we found changing art happens in several occasions. It can be a patient initiated request, or it is on volunteer's call. And the person who answers patient's requests can varies </br>
+              </br>
               <strong>Recommendation:  </strong>The desired system should be able to support interaction needs in each scenario, and the interface must guide users and prevent errors.
             </div>
           </div>
@@ -160,9 +174,12 @@
         </div>
       </div>
       <div class="row mx-5">
-        <div class="col-sm my-5"><img src="img/persona_1.png"></img></div>
-        <div class="col-sm my-5"><img src="img/persona_2.png"></img></div>
-        <div class="col-sm my-5"><img src="img/persona_3.png"></img></div>
+        <div class="col-sm my-5"><img src="img/persona_1.png"></img>
+        </div>
+        <div class="col-sm my-5"><img src="img/persona_2.png"></img>
+        </div>
+        <div class="col-sm my-5"><img src="img/persona_3.png"></img>
+        </div>
       </div>
 
       <div id="design" class="blog-content-contianer w-container">
@@ -181,31 +198,32 @@
               <br>We replace the old design with a scrollable list of room numbers.
               <img class="mb-4 mt-4" src="img/roomlist.png"></img>
             </div>
-          </div></div>
-          <img src="img/art_annotation.png"></img>
-          <div class="blog-content-sub">
+          </div>
+        </div>
+        <img src="img/art_annotation.png"></img>
+        <div class="blog-content-sub">
 
-            <div class="blog-item mb-4"><strong class="seq">2.</strong> There was a brief introduction of each painting in the card binder. However, the interview shows that patients don’t care about the text, but mostly make decision based on visual appeal.
-              <br><br>In our App design, we decided to take the full screen to display painting gallery for patients. When patients choose one painting to replace, volunteer is directed to another screen to update painting location, and shown detailed information
-              of the painting.
-            </div>
+          <div class="blog-item mb-4"><strong class="seq">2.</strong> There was a brief introduction of each painting in the card binder. However, the interview shows that patients don’t care about the text, but mostly make decision based on visual appeal.
+            <br><br>In our App design, we decided to take the full screen to display painting gallery for patients. When patients choose one painting to replace, volunteer is directed to another screen to update painting location, and shown detailed information
+            of the painting.
           </div>
         </div>
       </div>
-      <img src="img/wireframe.png"></img>
-
-
     </div>
-    <div class="footer">
-      <div class="footer-text">© 2018 by Puhe Liang</div>
-    </div>
+    <img src="img/wireframe.png"></img>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/in-view.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- <script src="js/webflow.js" type="text/javascript"></script> -->
-    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+  </div>
+  <div class="footer">
+    <div class="footer-text">© 2018 by Puhe Liang</div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/in-view.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/webflow.js" type="text/javascript"></script> -->
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 
 </html>

@@ -21,6 +21,18 @@
       }
     });
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89169477-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-89169477-1');
+  </script>
+
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -92,9 +104,8 @@
       <div class="blog-content w-clearfix">
         <div class="blog-content-normal">We started with a one-day workshop with stakeholders, including product owners, customer representatives, warehouse management. We invited EWM customers who demand for software assistantship in e-commerce return business. Customers are from various
           areas including groceries, coffee and cloth industry. The workshop helped us collect information of return process in their business, and their special concerns in each particular industry, so we could better understand their pains.</div>
-        <img
-          class="blog-content-img" src="img/workshop.JPG"></img>
-          <div class="caption">This picture is credited by Hanna</div>
+        <img class="blog-content-img" src="img/workshop.JPG"></img>
+        <div class="caption">This picture is credited by Hanna</div>
       </div>
     </div>
     <div class="blog-content-contianer w-container">
@@ -141,7 +152,7 @@
         </div>
         <div class="blog-content-normal">To avoid bias assumption, we asked every team member to take notes of what they heard and what they observed. (Since individual member has his specialized domain of SAP system, it was proofed to be an effective technique to help us understand
           the situation thoroughly.) After sorted out the huge amount of notes token by the team, we synthesized core elements in work flow:</div>
-          <img src="img/data-io.PNG">
+        <img src="img/data-io.PNG">
       </div>
     </div>
     <div class="blog-content-contianer w-container">
@@ -151,15 +162,15 @@
         <div class="blog-content-normal">For UI harmonization, we decided to use <a href="http://www.sap.com/product/technology-platform/fiori.html">Fiori</a> framework for return application. Compared to my other more flexible prototyping experience, I had challenging time designing
           within constraints of <a href="https://experience.sap.com/fiori-design/">Fiori design guideline</a>. I also learnt a lot from Fiori central design team when we prepare to pass design gate, which made me think seriously for information architecture
           in UI design: the placement of a button is crucial for its semantic meanings. Especially when we design in a framework, we should be very careful with the location of each element to avoid confusion.</div>
-        <div class="blog-content-normal">Fiori has great role-based floorpan to supporting transaction of monitoring and pipeline business. But in this return app, we hope to link return clerk’s physical activities with the system interaction. For building conceptual model,
-          we had two major problems:</div>
+        <div class="blog-content-normal">Fiori has great role-based floorpan to supporting transaction of monitoring and pipeline business. But in this return app, we hope to link return clerk’s physical activities with the system interaction. For building conceptual model, we had two
+          major problems:</div>
         <div class="blog-content-sub">
           <div class="blog-item mb-4">
-          <strong class="seq">1.</strong> How to sequence and prioritize all the actions in a singe page, so that the user could finish task without bother to scroll? How to arrange secondary information? It would be too much if all pop-ups &nbsp;
-        </div>
-        <div class="blog-item mb-4"><strong class="seq">2.</strong> Return clerk wants to execute put-away in system when HU (handling unit) is full of returned product, and sometimes needs to create a new HU. How to reflect two actions in the system, and avoid interruption/confusion?
-        </div>
-          </div><img src="img/returnss.PNG" width="699">
+            <strong class="seq">1.</strong> How to sequence and prioritize all the actions in a singe page, so that the user could finish task without bother to scroll? How to arrange secondary information? It would be too much if all pop-ups &nbsp;
+          </div>
+          <div class="blog-item mb-4"><strong class="seq">2.</strong> Return clerk wants to execute put-away in system when HU (handling unit) is full of returned product, and sometimes needs to create a new HU. How to reflect two actions in the system, and avoid interruption/confusion?
+          </div>
+        </div><img src="img/returnss.PNG" width="699">
         <div class="blog-content-normal">We re-examined user scenarios, and categorized user input into "necessary", "occasionally necessary" and "nice-to-have". We surely gave first priority to the necessary input, and put nice-to-have features in lower positions. For occasional data,
           take serial number as an example. Users mainly capture it on a pop-up window, and able to check or modify it later by clicking tagged abbreviated information on main page.</div>
         <div class="blog-content-normal">We also designed a group of toggle buttons for condition selection, to restrain user from making mistakes.(This was proved to be effective in A/B test) And the content of those buttons are customizable to provide more flexibility for different
@@ -180,8 +191,9 @@
         <div class="blog-content-sub">
           <div class="blog-item mb-4"><strong class="seq">1.</strong> We made the field of destination location much larger with color sign indicating the quality condition and next destination. And we made it clickable to execute put-away.
           </div>
-          <div class="blog-item mb-4"><strong class="seq">2.</strong> We enabled the possibility to run through whole process by scanner without mouse and keyboard. For example, customer could configure a specific code representing put-away, and when user scan it, system would
-          execute put-away. In this way, user could also be more focused on inspection process</div></div>
+          <div class="blog-item mb-4"><strong class="seq">2.</strong> We enabled the possibility to run through whole process by scanner without mouse and keyboard. For example, customer could configure a specific code representing put-away, and when user scan it, system would execute
+            put-away. In this way, user could also be more focused on inspection process</div>
+        </div>
       </div>
     </div>
     <div class="blog-content-contianer w-container">
