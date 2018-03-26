@@ -200,6 +200,62 @@ body {
   transform: scale(1.5);
 }
 
+.other-projects {
+  /* color: rgba(83, 93, 82, 1); */
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Gurmukhi MN", 'Open Sans', serif;
+  /* text-shadow: 0.12em 0.12em #D8D8D8; */
+  position: fixed;
+  bottom: 17%;
+  width: 100%;
+  display: none;
+}
+
+.other-projects a{
+  color: rgba(83, 93, 82, 1);
+}
+
+.other-projects i{
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* .other-projects div:hover {
+  transform: scale(1.1);
+} */
+
+.last-project {
+  float: left;
+  left: 25px;
+  top: 25px;
+  position: relative;
+
+}
+
+.next-project {
+  float: right;
+  right: 25px;
+  top: 25px;
+  position: relative;
+  text-align: right;
+}
+
+.last-project:hover i{
+  transform: scale(1.5);
+}
+
+.next-project:hover i{
+  transform: scale(1.5);
+}
+
+.other-projects:hover a{
+  color: rgba(83, 93, 82, 1);
+}
+
 #return-to-top {
     position: fixed;
     bottom: 20px;

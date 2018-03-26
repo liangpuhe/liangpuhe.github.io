@@ -22,6 +22,14 @@
    }, 500);
  });
 
+ $(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+       $('.other-projects').fadeIn(200);
+   } else {
+       $('.other-projects').fadeOut(200);
+   }
+});
+
  var slideIndex = 1;
  showSlides(slideIndex);
 
