@@ -7,6 +7,19 @@ body {
   position: relative;
 }
 
+div > a:link {
+  color: #D63913;
+}
+
+div > a:visited {
+  color: #D63913;
+  /* color: #bf3a30; */
+}
+
+/* .blog-section-header {
+  padding-bottom: 10px;
+} */
+
 #navDots {
   position: fixed !important;
 }
@@ -213,7 +226,7 @@ body {
 }
 
 .other-projects a{
-  color: rgba(83, 93, 82, 1);
+  color: rgba(83, 93, 82, 1) !important;
 }
 
 .other-projects i{
