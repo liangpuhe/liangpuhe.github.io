@@ -38,17 +38,17 @@ h2 {
 .text-hello {
   font-size: 2rem;
   margin: 1rem 0 0 0;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
-  font-family: "Gurmukhi MN", 'Open Sans', serif;
+  font-family: 'Open Sans', serif;
   color: #C1CAC0;
 }
 
 .text-sub-hello {
-  font-family: "Gurmukhi MN", 'Open Sans', serif;
+  font-family: 'Open Sans', serif;
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 1.2rem;
   padding-top: 0;
   color: #C1CAC0;
@@ -56,7 +56,7 @@ h2 {
 
 .text-highlight {
   color: #EDD3C1 !important;
-  font-weight: 600;
+  font-weight: 630;
   font-size: 2.3rem;
   text-shadow: 3px 3px #BD5D38;
 }
@@ -83,7 +83,7 @@ h2 {
   border-radius: 5px 5px 5px 5px;
   box-shadow: 4px 6px #535D52;
   box-sizing: border-box;
-  font-family: "Gurmukhi MN", 'Open Sans', serif;
+  font-family: 'Open Sans', serif;
   padding: 8px;
 }
 
@@ -237,8 +237,8 @@ section.resume-section .resume-item .resume-date {
 }
 
 #experience {
-  /* background-color: #E6D6CA; */
-  background-color: #E5DCCD;
+  background-color: #FFF8EE;
+  /* background-color: #F5ECDD; */
 }
 
 a {

@@ -20,6 +20,18 @@ div > a:visited {
   padding-bottom: 10px;
 } */
 
+.showcase {
+  box-shadow: 1px 6px 30px rgba(0, 0, 0, 0.35);
+}
+
+.screens {
+  max-width: 1200px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 #navDots {
   position: fixed !important;
 }

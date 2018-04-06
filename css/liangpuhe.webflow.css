@@ -157,11 +157,11 @@ blockquote {
 .navigation-link {
   padding-top: 7px;
   padding-bottom: 7px;
-  font-family: "Gurmukhi MN", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   color: #ecf0f1;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 350;
   letter-spacing: 1px;
 }
 
@@ -1135,10 +1135,10 @@ blockquote {
 }
 
 .brand-text {
-  font-family: "Gurmukhi MN", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #d4d4d4;
-  font-size: 33px;
-  line-height: 36px;
+  font-size: 30px;
+  line-height: 45px;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -1185,8 +1185,20 @@ blockquote {
   font-family: 'Open Sans', sans-serif;
   color: rgba(0, 0, 0, .82);
   font-size: 18px;
-  line-height: 31px;
-  font-weight: 400;
+  line-height: 32px;
+  font-weight: 200;
+}
+
+.blog-content-screens {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left:10px;
+  margin-right: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, .82);
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 200;
 }
 
 .blog-content-sub {
@@ -1213,8 +1225,8 @@ blockquote {
   clear: none;
   font-family: Lato, sans-serif;
   color: #000;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
   letter-spacing: 0px;
   text-indent: 0px;
