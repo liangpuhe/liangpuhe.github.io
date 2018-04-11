@@ -1057,15 +1057,15 @@ blockquote {
 .scope-header {
   margin-top: 44px;
   font-family: Montserrat, sans-serif;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .blog-subheader {
   display: block;
-  width: 780px;
+  width: 80%;
   height: 220px;
   margin-right: auto !important;
-  margin-left: 15% !important;
+  margin-left: auto !important;
   text-align: left;
 }
 
@@ -1180,8 +1180,8 @@ blockquote {
 }
 
 .blog-content-normal {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 35px;
   font-family: 'Open Sans', sans-serif;
   color: rgba(0, 0, 0, .82);
   font-size: 18px;
@@ -1208,7 +1208,7 @@ blockquote {
   padding-top: 0px;
   float: none;
   clear: none;
-  font-family: Lato, sans-serif;
+  font-family: 'Open Sans', Lato, sans-serif;
   color: #000;
   font-size: 18px;
   line-height: 25px;
