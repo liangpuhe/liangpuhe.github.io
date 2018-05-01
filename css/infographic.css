@@ -38,6 +38,7 @@
 .info-map {
     height: 550px;
     width: 830px;
+    position: relative;
 }
 .info-containe-red-1 img {
     position: relative;
@@ -54,10 +55,18 @@
 .info-light-header {
     color: #d7ac82;
 }
-.info-legend {
+.info-legend-container {
   position: relative;
   top: -15em;
   color: #d7ac82;
+}
+
+.info-legend {
+  position: absolute;
+}
+
+.info-legend-item {
+  position: static;
 }
 
 .info-subheader {

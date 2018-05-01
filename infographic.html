@@ -14,7 +14,6 @@
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/liangpuhe.webflow.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -77,16 +76,18 @@
     </div>
 
   </section>
-  <section class="container info-container-light-2 clearfix">
+  <section class="container info-container-light-2">
     <div class="clearfix">
-      <h1 class="float-sm-right info-h2 info-light-header">Differnt Sizes</h1>
+      <h1 class="float-sm-right info-h2 info-light-header">Different Sizes</h1>
     </div>
     <div id="dataMap" class="info-map d-block mx-auto"></div>
-    <div class="info-legend">
-      <div><img class="info-legend-img" src="img/none_color.png"><a>unknown</a></div>
-      <div><img class="info-legend-img" src="img/60_color.png"><a>60ml</a></div>
-      <div><img class="info-legend-img" src="img/80_color.png"><a>80ml</a></div>
-      <div><img class="info-legend-img" src="img/100_color.png"><a>100ml</a></div>
+    <div class="info-legend-container">
+      <div class="info-legend">
+        <div class="info-legend-item"><img class="info-legend-img" src="img/none_color.png"><a>unknown</a></div>
+        <div class="info-legend-item"><img class="info-legend-img" src="img/60_color.png"><a>60ml</a></div>
+        <div class="info-legend-item"><img class="info-legend-img" src="img/80_color.png"><a>80ml</a></div>
+        <div class="info-legend-item"><img class="info-legend-img" src="img/100_color.png"><a>100ml</a></div>
+      </div>
     </div>
   </section>
   <section class="container info-container-red-nu">
@@ -137,8 +138,7 @@
     </div>
   </section> -->
   <div class="mobile-unfriendly">
-      <img class="heart" src="img/heart.png" alt="heart">
-    Please view this page on desktop</div>
+    <img class="heart" src="img/heart.png" alt="heart"> Please view this page on desktop</div>
 
 
   <!-- Footer -->
@@ -152,12 +152,14 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/d3.geomap.dependencies.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+  <!-- <script src="js/d3.geomap.dependencies.min.js"></script>
   <script src="js/d3.geomap.min.js"></script>
-  <script src="js/datamaps.world.min.js"></script>
+  <script src="js/datamaps.world.min.js"></script> -->
   <script src="js/d3.arc.js"></script>
   <script>
-    function myMap() {
       var dataMap = new Datamap({
         element: document.getElementById('dataMap'),
         projection: 'mercator',
@@ -170,6 +172,7 @@
           highlightFillColor: '#d7ac82',
           highlightBorderColor: '#d7ac82',
           borderWidth: 0.1,
+          dataUrl: null,
         },
         fills: {
           defaultFill: '#d9b4b7',
@@ -297,7 +300,7 @@
           },
         }
       });
-    }
+
 
     function changePic(image) {
       image.src = "img/yakult_annotated.png";
@@ -307,8 +310,6 @@
       image.src = "img/yakult.png"
     }
   </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQbaEUZp5KQ6g1yyNvUMf4sk8m1R-yF5Q&callback=myMap"></script>
   <script>
     $(function() {
       $('#info-yakult').hover(function() {
