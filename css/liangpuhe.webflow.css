@@ -154,16 +154,7 @@ blockquote {
   background-color: #3b99d9;
 }
 
-.navigation-link {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  color: #ecf0f1;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 350;
-  letter-spacing: 1px;
-}
+
 
 .navigation-link:hover {
   color: #333;
@@ -187,7 +178,6 @@ blockquote {
   padding-bottom: 70px;
   background-color: transparent;
   font-family: Montserrat, sans-serif;
-  text-transform: uppercase;
 }
 
 .navigation-bar.dark {
@@ -558,7 +548,7 @@ blockquote {
 }
 
 .footer {
-  padding-top: 48px;
+  padding-top: 80px;
   padding-bottom: 48px;
   text-align: center;
 }
@@ -780,11 +770,7 @@ blockquote {
   line-height: 18px;
 }
 
-.blog-content {
-  margin-top: 10px;
-  padding-right: 50px;
-  padding-left: 100px;
-}
+
 
 .blog-answer {
   padding: 0 2%;
@@ -991,7 +977,7 @@ blockquote {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   font-family: Montserrat, sans-serif;
-  color: #ecf0f1;
+  color: white;
   font-size: 40px;
   text-align: center;
 }
@@ -1120,19 +1106,7 @@ blockquote {
   color: #3F6908;
 }
 
-.blog-desc {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  font-family: Lato, serif;
-  color: rgba(93, 93, 93, 0.85);
-  font-size: 20px;
-  line-height: 26px;
-  font-style: italic;
-  font-weight: 400;
-  text-align: justify;
-}
+
 
 .brand-text {
   font-family: "Open Sans", sans-serif;
@@ -1179,43 +1153,6 @@ blockquote {
   text-indent: 0px;
 }
 
-.blog-content-normal {
-  margin-top: 25px;
-  margin-bottom: 35px;
-  font-family: 'Open Sans', sans-serif;
-  color: rgba(0, 0, 0, .82);
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 200;
-}
-
-.blog-content-screens {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left:10px;
-  margin-right: 10px;
-  font-family: 'Open Sans', sans-serif;
-  color: rgba(0, 0, 0, .82);
-  font-size: 13px;
-  line-height: 15px;
-  font-weight: 200;
-}
-
-.blog-content-sub {
-  display: block;
-  margin-top: 25px;
-  margin-bottom: 20px;
-  padding-top: 0px;
-  float: none;
-  clear: none;
-  font-family: 'Open Sans', Lato, sans-serif;
-  color: #000;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  letter-spacing: 0px;
-  text-indent: 0px;
-}
 
 .blog-content-under {
   display: block;
@@ -1271,14 +1208,7 @@ blockquote {
   perspective-origin: 50% 50%;
 }
 
-.blog-section-subheader {
-  margin-bottom: 0px;
-  font-family: Ubuntu, Helvetica, sans-serif;
-  color: #9C9B9B;
-  font-size: 14px;
-  line-height: 22px;
-  text-transform: uppercase;
-}
+
 
 .blog-section-subheader.ubi {
   color: #e69ba7;
@@ -1329,12 +1259,7 @@ blockquote {
   margin-bottom: 20px;
 }
 
-.seq {
-  margin-right: 5px;
-  color: #D63913;
-  font-size: 17px;
-  font-weight: 700;
-}
+
 
 .ubi {
   color: #e69ba7;
@@ -1351,6 +1276,7 @@ blockquote {
   color: #a1a7ac;
   line-height: 2;
   font-style: italic;
+  font-size: 14px;
 }
 
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {

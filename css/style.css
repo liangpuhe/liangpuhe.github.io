@@ -172,23 +172,23 @@ div > a:visited {
   position: relative;
   display: block;
   /* float: left; */
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   cursor: pointer;
 }
 
 .side-nav-dots li a, .side-nav-dots li a:focus {
   top: 0;
   left: 0;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   outline: none;
   border-radius: 100%;
   background-color: #fff;
-  background-color: #C1CAC0;
+  background-color: #bfbfbf;
   text-align: right;
-  font-size: 12px;
-  text-indent: -10rem;
+  font-size: 8px;
+  text-indent: -7rem;
   /* make the text accessible to screen readers */
   cursor: pointer;
   position: absolute;
@@ -209,32 +209,33 @@ div > a:visited {
 
 .dot-text {
   position: relative;
-  right: 30px;
+  right: 20px;
+  z-index: -10;
 }
 
 .side-nav-dots li a {
   -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  color: #535D52;
+  color: #4a4a4a;
 }
 
 .side-nav-dots li a:hover{
-  background-color: #535D52;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  background-color: #4a4a4a;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .side-nav-dots .active a {
-  background-color: #535D52 !important;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  background-color: #4a4a4a !important;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .other-projects {
   /* color: rgba(83, 93, 82, 1); */
-  font-size: 1.3rem;
-  font-weight: 400;
-  font-family: "Gurmukhi MN", 'Open Sans', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Open Sans', serif;
   /* text-shadow: 0.12em 0.12em #D8D8D8; */
   position: fixed;
   bottom: 17%;
@@ -243,7 +244,7 @@ div > a:visited {
 }
 
 .other-projects a{
-  color: rgba(83, 93, 82, 1) !important;
+  color: #4a4a4a !important;
 }
 
 .other-projects i{
@@ -288,11 +289,11 @@ div > a:visited {
 
 #return-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(83, 93, 82, 1);
-    width: 50px;
-    height: 50px;
+    bottom: 3%;
+    right: 2%;
+    background: #4a4a4a;
+    width: 45px;
+    height: 45px;
     display: block;
     text-decoration: none;
     /* -webkit-border-radius: 35px;
@@ -309,9 +310,9 @@ div > a:visited {
     color: #fff;
     margin: 0;
     position: relative;
-    left: 16px;
-    top: 15px;
-    font-size: 19px;
+    left: 14.5px;
+    top: 14.5px;
+    font-size: 18px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -319,7 +320,7 @@ div > a:visited {
     transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    background: rgba(83, 93, 82, 1);
+    background: #333333;
 }
 #return-to-top:hover i {
     color: #fff;

@@ -1552,6 +1552,7 @@ textarea.w-select {
 }
 .w-nav-button {
   position: relative;
+  color: #ecf0f1;
   float: right;
   padding: 18px;
   font-size: 24px;

@@ -8,6 +8,7 @@
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/liangpuhe.webflow.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/blog.css" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
@@ -44,17 +45,17 @@
   <div class="other-projects w-clearfix">
     <div class="last-project">
       <a href="co-express.html"><i class="fas fa-arrow-left"></i>
-      <div><div>Last project:</div><div>Co-Express</div></div></a>
+      <div><div>Last project:</div><div class="bold">Co-Express</div></div></a>
     </div>
     <div class="next-project">
       <a href="data-driven-detroit.html"><i class="fas fa-arrow-right right-arrow"></i>
-      <div><div>Next project:</div><div>D3 Usability Test</div></div></a>
+      <div><div>Next project:</div><div class="bold">D3 Usability Test</div></div></a>
     </div>
   </div>
   <div class="blog-header-GoA">
     <div class="navigation-bar w-nav" data-animation="default" data-collapse="medium" data-duration="400">
-      <div class="w-container"><a class="brand-link w-nav-brand" href="index.html"><h1 class="brand-text home-brand-text">Puhe Liang</h1></a>
-        <nav class="navigation-menu w-nav-menu" role="navigation"><a class="navigation-link w-nav-link" href="Puhe Liang.pdf" target="_blank">resume</a>
+      <div class="w-container"><a href="index.html"><h1 class="brand-text">Puhe Liang</h1></a>
+        <nav class="navigation-menu w-nav-menu" role="navigation"><a class="navigation-link" href="Puhe Liang.pdf" target="_blank">Resume</a>
         </nav>
         <div class="hamburger-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
@@ -94,7 +95,9 @@
   </div>
   <div>
     <div class="blog-subheader-container w-container">
-      <div class="blog-desc">In contextual inquiry course project, we worked with real clients for problems in information technology. Honorably, our client - Gifts of Art in Michigan Medicine, is one of the biggest art programs in health care nationwide. They have thousands of artworks exhibited in hospital, estimated to be visited by 10,000 people per day. They seek for help on transferring their card-managed inventory to a digital system. Our team of four, started from learning this special working context, in the end proposed a system design wireframe and a list of recommendations to engage digital tools, leverage collaboration and information archive.
+      <div class="blog-desc">In contextual inquiry course project, we worked with real clients for problems in information technology. Honorably, our client - Gifts of Art in Michigan Medicine, is one of the biggest art programs in health care nationwide. They have thousands
+        of artworks exhibited in hospital, estimated to be visited by 10,000 people per day. They seek for help on transferring their card-managed inventory to a digital system. Our team of four, started from learning this special working context, in
+        the end proposed a system design wireframe and a list of recommendations to engage digital tools, leverage collaboration and information archive.
       </div>
     </div>
     <div>
@@ -103,17 +106,17 @@
         <h1>Get to know our client</h1>
         <div class="blog-content w-clearfix">
           <div class="blog-content-normal">We visited Michigan Medicine hospital to meet our client. When we walked around the hospital, we were amazed that the hall and lobby are all decorated with paintings or artifacts. We were told each patient has a painting in front of the bed.
-            Those are the work of our client - Gifts of Art (GoA).</div>
-          <img src="img/hospital.png" class="m-4"></img>
+            Those are the work of our client - Gifts of Art (GoA).
+          <img src="img/hospital.png"></img></div>
           <div class="blog-content-normal">In this course project, we were working on one program of GoA. It is called Art Cart - volunteers taking a cart full of arts, to visit patient’s room one by one, and ask patients whether they want to change the art in their rooms. </div>
           <div class="row mt-4 mb-4">
             <div class="col-sm">
               <img src="img/cart01.jpg"></img>
-              <div class="caption">On one side of the cart, library cards were placed by room numbers, representing the paintings currently in patients' rooms</div>
+              <div class="blog-content-screens">On one side of the cart, library cards were placed by room numbers, representing the paintings currently in patients' rooms</div>
             </div>
             <div class="col-sm">
               <img src="img/cart02.jpg"></img>
-              <div class="caption">The cards representing the arts in the cart are stored in a binder for patients to read</div>
+              <div class="blog-content-screens">The cards representing the arts in the cart are stored in a binder for patients to read</div>
             </div>
           </div>
           <div class="blog-content-normal">We did background research for art in health care, to understand the organization’s goal, and talk with client to learn GoA worker’s workflow. </div>
@@ -158,17 +161,17 @@
             Look into the needs:
           </div>
           <div class="blog-content-sub">
-            <div class="blog-item mb-4"><strong class="seq">Finding 1:</strong> </br>
-              As the client claimed, searching art based on memory isn’t effective. We found that although patients’ painting requests are usually not fulfilled, they are still happy with an alternative choice. And according
-              to our interview, patient requests are not always specific.</br>
+            <div class="blog-item mb-4"><strong class="red">Finding 1:</strong> </br>
+              As the client claimed, searching art based on memory isn’t effective. We found that although patients’ painting requests are usually not fulfilled, they are still happy with an alternative choice. And according to our interview, patient requests are not
+              always specific.</br>
               </br>
-              <strong class="seq">Recommendation 1:</strong></br>We introduced crowd tagging feature, asking patients to tag the art using their language. In this way, the system would build connections between tags, so GoA workers can search by patient-made tags, and
-              find related paintings easily.
+              <strong class="red">Recommendation 1:</strong></br>We introduced crowd tagging feature, asking patients to tag the art using their language. In this way, the system would build connections between tags, so GoA workers can search by patient-made
+              tags, and find related paintings easily.
             </div>
-            <div class="blog-item mb-4"><strong class="seq">Finding 2:</strong> </br>
+            <div class="blog-item mb-4"><strong class="red">Finding 2:</strong> </br>
               By learning user work flow, we found changing art happens in several occasions. It can be a patient initiated request, or it is on volunteer's call. And the person who answers patient's requests can varies </br>
               </br>
-              <strong class="seq">Recommendation 2:</strong></br>The desired system should be able to support interaction needs in each scenario, and the interface must guide users and prevent errors.
+              <strong class="red">Recommendation 2:</strong></br>The desired system should be able to support interaction needs in each scenario, and the interface must guide users and prevent errors.
             </div>
           </div>
         </div>
@@ -181,13 +184,8 @@
           <div class="blog-content-normal">The desired system is going to be used by three different roles. During interviews, we found they have very different perspectives in Art Cart activities.</div>
         </div>
       </div>
-      <div class="row mx-5">
-        <div class="col-sm my-5"><img src="img/persona_1.png"></img>
-        </div>
-        <div class="col-sm my-5"><img src="img/persona_2.png"></img>
-        </div>
-        <div class="col-sm my-5"><img src="img/persona_3.png"></img>
-        </div>
+      <div id="scope" class="blog-content-contianer w-container">
+        <img src="img/personas.png"></img>
       </div>
 
       <div id="design" class="blog-content-contianer w-container">
@@ -199,7 +197,7 @@
             Based on our understanding of each user's goal, there were some interesting findings regards UX design:
           </div>
           <div class="blog-content-sub">
-            <div class="blog-item mb-4"><strong class="seq">1.</strong> The previous shift sheet design can be a pressure to urge volunteer to finish the floor, thus neglect communication quality with patients.
+            <div class="blog-item mb-4"><strong class="seq">1.</strong>The previous shift sheet design can be a pressure to urge volunteer to finish the floor, thus neglect communication quality with patients.
               <br><br>Sometimes volunteers are hurry to end a conversation in order to visit more rooms in the shift, which is actually not the program wants.
               <div class="blog-content-img"><img class="mb-4 mt-4" src="img/shiftsheet.png"></img>
               </div>
@@ -207,13 +205,14 @@
               <img class="mb-4 mt-4" src="img/roomlist.png"></img>
             </div>
           </div>
-        </div>
-        <img src="img/art_annotation.png"></img>
-        <div class="blog-content-sub">
 
-          <div class="blog-item mb-4"><strong class="seq">2.</strong> There was a brief introduction of each painting in the card binder. However, the interview shows that patients don’t care about the text, but mostly make decision based on visual appeal.
-            <br><br>In our App design, we decided to take the full screen to display painting gallery for patients. When patients choose one painting to replace, volunteer is directed to another screen to update painting location, and shown detailed information
-            of the painting.
+          <img src="img/art_annotation.png"></img>
+          <div class="blog-content-sub">
+
+            <div class="blog-item mb-4"><strong class="seq">2.</strong>There was a brief introduction of each painting in the card binder. However, the interview shows that patients don’t care about the text, but mostly make decision based on visual appeal.
+              <br><br>In our App design, we decided to take the full screen to display painting gallery for patients. When patients choose one painting to replace, volunteer is directed to another screen to update painting location, and shown detailed
+              information of the painting.
+            </div>
           </div>
         </div>
       </div>

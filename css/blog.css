@@ -1,0 +1,135 @@
+.brand-text {
+  font-family: 'Abril Fatface', 'Open Sans', serif;
+  color: white;
+  font-size: 27px;
+  line-height: 45px;
+  font-weight: 100;
+  display: inline-block; /*to overwrite h1 block*/
+}
+
+.navigation-link {
+  margin-bottom: .5rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 45px;
+  font-weight: 350;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scope-content {
+  margin-top: 9px;
+  padding-left: 1px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.other-project {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.blog-header-chattie {
+  background-image: url('../img/Chattie.png');
+  background-position: center 250px;
+  background-size: 700px auto;
+  background-color: #FFBF55;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.blog-header-chattie .blog-header-text {
+  color: white;
+}
+
+.blog-content-screens {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  font-family: sans-serif;
+  color: #545454;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 200;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.blog-desc {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-family: "Lato", serif;
+  color: #888888;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.blog-section-subheader {
+  margin-bottom: 0px;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  color: #B3B3B3;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.blog-content {
+  margin-top: 10px;
+  padding-right: 50px;
+  padding-left: 100px;
+  font-family: 'Open Sans', sans-serif;
+  color: #545454;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.blog-content-normal {
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.blog-content-normal > img {
+  margin: 1.5rem 0;
+}
+
+.blog-content-sub {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+
+}
+
+.blog-content-highlight {
+  font-weight: 600;
+  color: #4a4a4a !important;
+}
+
+.seq {
+  margin-right: .5em;
+  color: #D63913;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.red {
+  margin-right: .5em;
+  color: #D63913;
+  font-weight: 700;
+}
