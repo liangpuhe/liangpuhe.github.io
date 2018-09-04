@@ -133,3 +133,15 @@
   color: #D63913;
   font-weight: 700;
 }
+
+.larger {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.unfinished {
+  font-size: 40px;
+  font-weight: 800;
+  color: #B3B3B3 !important;
+  text-align:center;
+}
