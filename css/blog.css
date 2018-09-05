@@ -116,6 +116,12 @@
 
 }
 
+.blog-subtitle {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 800;
+}
+
 .blog-content-highlight {
   font-weight: 600;
   color: #4a4a4a !important;
@@ -137,6 +143,10 @@
 .larger {
   font-size: 20px;
   line-height: 35px;
+}
+
+.border {
+  font-weight: bolder;
 }
 
 .unfinished {
