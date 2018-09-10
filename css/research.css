@@ -1,16 +1,16 @@
-.brand-text {
+.brand-text-dark {
   font-family: 'Abril Fatface', 'Open Sans', serif;
-  color: white;
+  color: #696969;
   font-size: 27px;
   line-height: 45px;
   font-weight: 100;
   display: inline-block; /*to overwrite h1 block*/
 }
 
-.navigation-link {
+.navigation-link-dark {
   margin-bottom: .5rem;
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: #696969;
   font-size: 14px;
   line-height: 45px;
   font-weight: 350;
@@ -20,6 +20,51 @@
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
+}
+
+.research-header-container {
+  display: block;
+  height: 150px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.research-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-family: Montserrat, sans-serif;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.research-header-text {
+  margin-top: 11px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.research-concept {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
 }
 
 .scope-content {
@@ -150,6 +195,15 @@
 .larger {
   font-size: 20px;
   line-height: 35px;
+}
+
+.pic-header {
+  font-size: 18px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-align: center;
+  color: #545454;
 }
 
 

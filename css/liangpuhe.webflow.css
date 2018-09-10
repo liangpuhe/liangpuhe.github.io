@@ -1106,17 +1106,6 @@ blockquote {
   color: #3F6908;
 }
 
-
-
-.brand-text {
-  font-family: "Open Sans", sans-serif;
-  color: #d4d4d4;
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 400;
-  text-transform: capitalize;
-}
-
 .brand-text.home-brand-text {
   color: #ecf0f1;
 }
