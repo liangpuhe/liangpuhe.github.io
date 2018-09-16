@@ -8,11 +8,11 @@ body {
 }
 
 div > a:link {
-  color: #D63913;
+  color: #696969;
 }
 
 div > a:visited {
-  color: #D63913;
+  color: #696969;
   /* color: #bf3a30; */
 }
 
