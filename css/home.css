@@ -29,14 +29,14 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 .about-text {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
-.about-text strong{
+.about-text strong {
   color: #4a4a4a;
 }
 
@@ -50,53 +50,54 @@ h2 {
 }
 
 .nav-name {
-  margin: 0.5rem 0 2rem 0;
+  margin: 0.5rem 0 1.5rem 0;
 }
 
 .nav-item {
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
-.nav-item > a {
-    color: #4A4A4A;
-    text-align: center;
-    padding: 0.1rem 1.2rem;
-    text-decoration: none;
-    /*background-image: linear-gradient(to right,
+.nav-item>a {
+  color: #4A4A4A;
+  text-align: center;
+  padding: 0.1rem 1.2rem;
+  text-decoration: none;
+  /*background-image: linear-gradient(to right,
                                       #CCFF33,
                                       #CCFF33 50%,
                                       transparent 50%,
                                       transparent);*/
-    background-image: linear-gradient(to right, #FF8690, #FFC371 49%, transparent 49%, transparent);
-    background-repeat: no-repeat;
-    background-size: 200% 65%;
-    background-position: 100% 100%;
-    transition: all .2s ease-in;
-}
-.nav-item > a:hover {
-    color: #4A4A4A;
-    background-position: 0 100%;
+  background-image: linear-gradient(to right, #FF8690, #FFC371 49%, transparent 49%, transparent);
+  background-repeat: no-repeat;
+  background-size: 200% 65%;
+  background-position: 100% 100%;
+  transition: all .2s ease-in;
 }
 
-.nav-item > a:visited {
+.nav-item>a:hover {
+  color: #4A4A4A;
+  background-position: 0 100%;
+}
+
+.nav-item>a:visited {
   color: #4A4A4A;
 }
 
 .highlight-item {
-    color: #696969;
-    text-align: center;
-    text-decoration: none;
-    /*background-image: linear-gradient(to right,
+  color: #696969;
+  text-align: center;
+  text-decoration: none;
+  /*background-image: linear-gradient(to right,
                                       #CCFF33,
                                       #CCFF33 50%,
                                       transparent 50%,
                                       transparent);*/
-    background-image: linear-gradient(to top, #FFC371, #FF8690 49%, transparent 49%, transparent);
-    background-repeat: no-repeat;
-    background-size: 100% 200%;
-    background-position: 100% 15%;
-    transition: all .2s ease-in;
+  background-image: linear-gradient(to top, #FFC371, #FF8690 49%, transparent 49%, transparent);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  background-position: 100% 15%;
+  transition: all .2s ease-in;
 }
 
 .highlight-item-unready {
@@ -104,9 +105,10 @@ h2 {
   text-decoration: none;
   font-weight: bolder;
 }
+
 .highlight-item:hover {
-    color: #4A4A4A;
-    background-position: 100% 100%;
+  color: #4A4A4A;
+  background-position: 100% 100%;
 }
 
 .link-prof, .link-prof:visited {
@@ -125,6 +127,9 @@ h2 {
   font-weight: 600;
 }
 
+.navbar-toggler {
+  color: #696969;
+}
 /*.nav-item > a {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   background-repeat: no-repeat;
@@ -156,7 +161,6 @@ h2 {
   font-size: 1.2rem;
   font-weight: 400;
   padding: 1rem 0;
-
 }
 
 .copyright {
@@ -187,25 +191,27 @@ h2 {
   padding: 0.3rem 0;
 }
 
+/* mobile first for project covers */
 
+.project-title {
+  margin: 10px 0 0 0;
+  font-family: 'Varela Round', sans-serif;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+}
 
-@media (max-width: 992px) {
-  .btn-resume {
-    display: none;
-  }
-  .intro {
-    display: none;
-  }
+.project-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: rgba(93, 93, 93, .83);
+  font-size: 16px;
 }
 
 .project-block {
-  width: 55rem;
   display: block;
   margin: 70px auto 80px auto;
-}
-
-.scene {
-  overflow: hidden;
+  width: 70vw;
 }
 
 .project-block img {
@@ -213,23 +219,34 @@ h2 {
   max-height: 100%;
 }
 
+@media (min-width: 768px) {
+  .project-block {
+    width: 60vw;
+  }
+  .project-title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .project-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 996px) {
+  .project-block {
+    width: 50vw;
+  }
+}
+
+/* <-- mobile first for project covers */
+
+.scene {
+  overflow: hidden;
+}
+
+
 .circle_img {
-  width: 110%;
-}
-
-.project-title {
-  margin: 10px 0 0 0;
-  font-family: 'Varela Round', sans-serif;
-  color: #333;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.project-subtitle {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  color: rgba(93, 93, 93, .83);
-  font-size: 18px;
+  width: 100%;
 }
 
 .subheading {
@@ -260,26 +277,40 @@ h2 {
 }
 
 .icon_work {
-  height: 90px;
+  height: 13vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
-  padding: 5% 0 10% 0;
+  padding: 4% 0 2% 0;
 }
 
-.icon_work ~ p {
-  font-size: 1rem;
+.icon_work~p {
+  font-size: 14px;
   text-align: center;
   font-weight: bolder;
 }
 
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase;
+@media (min-width: 768px) {
+  .icon_work {
+    height: 8vw;
+    padding: 4% 0 8% 0;
+  }
+  .icon_work~p {
+    font-size: 1.2vw;
+  }
+}
+@media (min-width: 992px) {
+  .icon_work {
+    height: 6vw;
+    padding: 4% 0 8% 0;
+  }
+  .icon_work~p {
+    font-size: 0.9vw;
+  }
 }
 
-@media (min-width: 692px) {
+@media (min-width: 992px) {
   #sideNav {
     /* text-align: center; */
     position: fixed;
@@ -293,12 +324,12 @@ h2 {
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: 15% auto 0 auto;
+    margin: 2rem auto 0 auto;
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 9rem;
+    max-height: 9rem;
     border: none;
   }
   #sideNav .navbar-collapse {
@@ -320,7 +351,6 @@ h2 {
   }
 }
 
-
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -336,7 +366,7 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 992px) {
   section.resume-section {
-    padding-top: 3rem !important;
+    padding-top: 2rem !important;
     padding-bottom: 3rem !important;
   }
 }
@@ -344,15 +374,6 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
   color: #BD5D38 !important;
 }
-
-#experience {
-  /*background-color: #FFF8EE;*/
-  /*background-image: linear-gradient(240deg, #FF8690, #FFC371);*/
-}
-
-/*a {
-  color: #C1CAC0;
-}*/
 
 a:hover, a:focus, a:active {
   text-decoration: none;
