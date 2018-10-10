@@ -33,7 +33,7 @@ h2 {
 }
 
 .about-text {
-  font-size: 1.0rem;
+  font-size: 1.1rem;
 }
 
 .about-text strong {
@@ -390,9 +390,12 @@ section.resume-section .resume-item .resume-date {
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
+    padding-right: 14rem!important;
+    padding-left: 8rem!important;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
+
   }
 }
 
