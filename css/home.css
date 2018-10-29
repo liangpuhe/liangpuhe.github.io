@@ -36,6 +36,10 @@ h2 {
   font-size: 1.1rem;
 }
 
+.about-text a{
+  color: #696969 !important;
+}
+
 .about-text strong {
   color: #4a4a4a;
 }
@@ -390,8 +394,8 @@ section.resume-section .resume-item .resume-date {
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
-    padding-right: 14rem!important;
-    padding-left: 8rem!important;
+    padding-right: 10rem!important;
+    padding-left: 9rem!important;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
