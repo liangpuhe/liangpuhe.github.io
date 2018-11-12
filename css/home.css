@@ -54,7 +54,19 @@ h2 {
 }
 
 .nav-name {
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0.5rem 0 1.4rem 0;
+}
+
+.nav-jobSearch {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+}
+.nav-job {
+  text-align: center;
+  font-size: .9rem;
+  margin-bottom: 1.4rem;
+  color: #888888;
 }
 
 .nav-item {

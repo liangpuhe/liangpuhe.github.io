@@ -141,6 +141,12 @@
   font-weight: 700;
 }
 
+.seq_icon {
+  margin-right: .5em;
+  color: #D63913;
+  font-size: 1.8em;
+}
+
 .red {
   margin-right: .5em;
   color: #D63913;
