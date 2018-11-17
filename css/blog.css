@@ -100,7 +100,7 @@
   padding-left: 100px;
   font-family: 'Open Sans', sans-serif;
   color: #545454;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 28px;
   font-weight: 300;
 }
@@ -175,4 +175,15 @@
   font-weight: 800;
   color: #B3B3B3 !important;
   text-align: center;
+}
+
+.chattie-color {
+  color: #C1BEDC;
+}
+
+.say-again {
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+  color: #888888;
 }
