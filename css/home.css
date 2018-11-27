@@ -185,9 +185,11 @@ h2 {
 
 .nav-social {
   margin: .5rem 2rem;
+  background-color: white;
   position: fixed;
   left: 0;
-  bottom: 3rem;
+  bottom: 0;
+  padding-bottom: 3rem;
   width: 18rem;
   color: #888888;
   text-align: center;
@@ -371,7 +373,7 @@ h2 {
     box-sizing: content-box;
   }
   #sideNav .navbar-brand {
-    display: flex;
+    /* //display: flex; */
     margin: 2rem auto 0 auto;
     padding: 0.5rem;
   }
