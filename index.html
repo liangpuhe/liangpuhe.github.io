@@ -131,18 +131,6 @@
 				</a>
 			</div>
 			<div class="project-block">
-				<a href="return.html">
-					<div id="scene_return" class="scene" data-hover-only="true" data-relative-input="true">
-						<div data-depth="0.00"><img src="img/cover/background.png"></div>
-						<div data-depth="0.10" class="circle_img"><img src="img/cover/return_circles.png"></div>
-						<div data-depth="0.00"><img src="img/cover/return_text.png"></div>
-						<div data-depth="0.30"><img src="img/cover/return_graph.png"></div>
-					</div>
-					<div class="project-title">E-commerce Return: Enterprise Web Application in SAP EWM</div>
-					<div class="project-subtitle">Design Interactions with Systems and Products in Return Workflow</div>
-				</a>
-			</div>
-			<div class="project-block">
 				<a href="co-express.html">
 					<div id="scene_co-express" class="scene" data-hover-only="true" data-relative-input="true">
 						<div data-depth="0.00"><img src="img/cover/background.png"></div>
@@ -167,13 +155,13 @@
 					<div class="project-subtitle">Integrate Digital Tool and Paper Files in Inventory Management</div>
 				</a>
 			</div>
-			<!-- <div class="project-block">
+			<div class="project-block">
 				<a href="data-driven-detroit.html">
 						<img src="img/cover_d3.png">
 						<div class="project-title">User Research with Data Driven Detroit</div>
 						<div class="project-subtitle">Civic Technology Usability Test & Web Re-design</div>
 					</a>
-			</div> -->
+			</div>
 			<!-- <div class="project-block">
 				<a href="infographic.html">
 						<img src="img/cover_yakult.png">
@@ -233,9 +221,6 @@
 
 		scene = document.getElementById('scene_goa');
 		parallax = new Parallax(scene);
-
-		scene = document.getElementById('scene_return');
-		parallax = new Parallax(scene);
 	} else {
 		var myNode = document.getElementById("scene_chattie");
 		while (myNode.firstChild) {
@@ -248,10 +233,6 @@
 		var myNode_goa = document.getElementById("scene_goa");
 		while (myNode_goa.firstChild) {
 			myNode_goa.removeChild(myNode_goa.firstChild);
-		}
-		var myNode_return = document.getElementById("scene_return");
-		while (myNode_return.firstChild) {
-			myNode_return.removeChild(myNode_return.firstChild);
 		}
 
 		var i_chattie = document.createElement("img");
@@ -267,10 +248,6 @@
 		var i_goa = document.createElement("img");
 		i_goa.setAttribute('src', 'img/cover/goa.png');
 		myNode_goa.appendChild(i_goa);
-
-		var i_return = document.createElement("img");
-		i_return.setAttribute('src', 'img/cover/return.png');
-		myNode_goa.appendChild(i_return);
 
 	}
 </script>
