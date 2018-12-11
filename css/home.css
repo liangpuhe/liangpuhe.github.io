@@ -91,7 +91,7 @@ h2 {
   transition: all .2s ease-in;
 }
 
-.nav-item>a:hover {
+.nav-item>a:hover{
   color: #4A4A4A;
   background-position: 0 100%;
 }
@@ -99,6 +99,12 @@ h2 {
 .nav-item>a:visited {
   color: #4A4A4A;
 }
+
+.nav-item.active>a {
+  color: #4A4A4A;
+  background-position: 0 100%;
+}
+
 
 .highlight-item {
   color: #696969;
@@ -165,7 +171,7 @@ h2 {
   text-align: center;
 }
 
-.text-name:hover {
+.text-name:hover{
   background: linear-gradient(45deg, #FF8690, #FFC371) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
