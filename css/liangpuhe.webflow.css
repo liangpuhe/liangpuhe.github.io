@@ -1009,7 +1009,7 @@ blockquote {
 }
 
 .blog-header-log {
-  background-image: linear-gradient(180deg, rgba(204, 143, 19, .85), rgba(204, 143, 19, .85)), url('../img/logistics.jpeg');
+  background-image: linear-gradient(180deg, rgba(158, 199, 216, .25), rgba(158, 199, 216, .85)), url('../img/logistics.jpeg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   background-color: #D23930;
@@ -1085,7 +1085,7 @@ blockquote {
 .blog-header-text {
   margin-top: 11px;
   font-family: 'Open Sans', sans-serif;
-  color: #f0a50e;
+  color: #FFE9AF;
   font-size: 17px;
   font-weight: 600;
 }
@@ -1124,7 +1124,7 @@ blockquote {
   column-count: 1;
 }
 
-.blog-content-contianer {
+.blog-content-container {
   margin-top: 4rem;
   padding-right: 60px;
   padding-left: 60px;
