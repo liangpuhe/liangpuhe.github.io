@@ -38,11 +38,23 @@
   font-size: 16px;
 }
 
+.eatjoy {
+  color: #00AB81;
+}
 .blog-header-chattie {
   background-image: url('../img/Chattie.png');
   background-position: center 250px;
   background-size: 700px auto;
   background-color: #FFC972;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.blog-header-eatjoy {
+  background-image: url('../img/Chattie.png');
+  background-position: center 250px;
+  background-size: 700px auto;
+  background-color: #74CFB3;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
