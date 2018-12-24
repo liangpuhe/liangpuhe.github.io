@@ -87,6 +87,20 @@
 					<div class="project-subtitle">🥇 1st in UXPA 2018 Student Design Contest</div>
 				</a>
 			</div>
+
+			<div class="project-block">
+				<a href="eatjoy.html">
+					<div id="scene_eatjoy" class="scene" data-hover-only="true" data-relative-input="true">
+						<div data-depth="0.00"><img src="img/cover/background.png"></div>
+						<div data-depth="0.10" class="circle_img"><img src="img/cover/eatjoy_circles.png"></div>
+						<div data-depth="0.00"><img src="img/cover/eatjoy_text.png"></div>
+						<div data-depth="0.30"><img src="img/cover/eatjoy_graph.png"></div>
+					</div>
+					<div class="project-title">EatJoy: Mobile App Solution for Emotional Eating</div>
+					<div class="project-subtitle">Incoperate Health Behavior Intervention Techniques in App Design</div>
+				</a>
+			</div>
+
 			<div class="project-block">
 				<a href="return.html">
 					<div id="scene_return" class="scene" data-hover-only="true" data-relative-input="true">
@@ -230,24 +244,37 @@
 		scene = document.getElementById('scene_chattie');
 		parallax = new Parallax(scene);
 
+		scene = document.getElementById('scene_eatjoy');
+		parallax = new Parallax(scene);
+
 		scene = document.getElementById('scene_goa');
 		parallax = new Parallax(scene);
 
 		scene = document.getElementById('scene_return');
 		parallax = new Parallax(scene);
+
 	} else {
+
 		var myNode = document.getElementById("scene_chattie");
 		while (myNode.firstChild) {
 			myNode.removeChild(myNode.firstChild);
 		}
+
 		var myNode_co = document.getElementById("scene_co-express");
 		while (myNode_co.firstChild) {
 			myNode_co.removeChild(myNode_co.firstChild);
 		}
+
+		var myNode_eatjoy = document.getElementById("scene_eatjoy");
+		while (myNode_eatjoy.firstChild) {
+			myNode_eatjoy.removeChild(myNode_eatjoy.firstChild);
+		}
+
 		var myNode_goa = document.getElementById("scene_goa");
 		while (myNode_goa.firstChild) {
 			myNode_goa.removeChild(myNode_goa.firstChild);
 		}
+
 		var myNode_return = document.getElementById("scene_return");
 		while (myNode_return.firstChild) {
 			myNode_return.removeChild(myNode_return.firstChild);
