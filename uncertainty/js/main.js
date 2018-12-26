@@ -90,9 +90,9 @@ var data = [{
     img: "img/temperature-change.png",
     title: "Global temperature change",
     description: "this is a description",
-    link: "",
-    button: "",
-    label: [""]
+    link: "https://www.theguardian.com/cities/ng-interactive/2017/nov/03/three-degree-world-cities-drowned-global-warming",
+    button: "Read More",
+    label: ["press"]
   },
   {
     img: "img/income-mobility.png",
@@ -114,9 +114,9 @@ var data = [{
     img: "img/risk-theatre.png",
     title: "Risk theatre",
     description: "this is a description",
-    link: "",
-    button: "",
-    label: [""]
+    link: "https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/29/how-to-better-communicate-election-forecasts-in-one-simple-chart/?noredirect=on&utm_term=.a6ef7e470ef6",
+    button: "Read More",
+    label: ["press"]
   },
   {
     img: "img/pictograph.png",
@@ -154,7 +154,7 @@ var data = [{
     img: "img/seats.png",
     title: "Seats",
     description: "this is a description",
-    link: "",
+    link: "https://www.nytimes.com/interactive/2018/10/24/us/elections/2018-battle-for-congress.html",
     button: "Read More",
     label: ["press"]
   },
