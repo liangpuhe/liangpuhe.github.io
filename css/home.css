@@ -86,7 +86,7 @@ h2 {
                                       transparent);*/
   background-image: linear-gradient(to right, #FF8690, #FFC371 49%, transparent 49%, transparent);
   background-repeat: no-repeat;
-  background-size: 200% 65%;
+  background-size: 200% 45%;
   background-position: 100% 100%;
   transition: all .2s ease-in;
 }
@@ -106,21 +106,6 @@ h2 {
 }
 
 
-.highlight-item {
-  color: #696969;
-  text-align: center;
-  text-decoration: none;
-  /*background-image: linear-gradient(to right,
-                                      #CCFF33,
-                                      #CCFF33 50%,
-                                      transparent 50%,
-                                      transparent);*/
-  background-image: linear-gradient(to top, #FFC371, #FF8690 49%, transparent 49%, transparent);
-  background-repeat: no-repeat;
-  background-size: 100% 200%;
-  background-position: 100% 15%;
-  transition: all .2s ease-in;
-}
 
 .highlight-item-unready {
   color: #696969;
