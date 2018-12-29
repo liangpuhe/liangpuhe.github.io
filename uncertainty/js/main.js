@@ -31,11 +31,11 @@ var data = [{
     label: ["paper"]
   },
   {
-    img: "img/bracket-probabilities.png",
+    img: "https://twitter.com/IneffectiveMath",
     title: "Bracket Probabilities",
     description: "this is a description",
-    link: "img/bracket-probabilities-full.png",
-    button: "See Full Picture",
+    link: "https://twitter.com/IneffectiveMath",
+    button: "Read More",
     label: ["image"]
   },
   {

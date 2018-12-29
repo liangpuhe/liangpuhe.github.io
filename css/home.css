@@ -87,6 +87,7 @@ h2 {
                                       transparent 50%,
                                       transparent);*/
   background-image: linear-gradient(to right, #FF8690, #FFC371 49%, transparent 49%, transparent);
+  /* background-image: linear-gradient(to right, #474747, #474747 49%, transparent 49%, transparent); */
   background-repeat: no-repeat;
   background-size: 200% 45%;
   background-position: 100% 100%;
