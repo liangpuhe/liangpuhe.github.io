@@ -158,7 +158,7 @@
 			</div> -->
 
 		</section>
-		<section id="hci">
+		<section class="my-5 py-5" id="hci">
 			<div class="row hci-row">
 				<div class="col-md hci-block">
 					<a href="mid-air.html">
@@ -284,6 +284,10 @@
 		while (myNode_return.firstChild) {
 			myNode_return.removeChild(myNode_return.firstChild);
 		}
+
+		var i_eatjoy = document.createElement("img");
+		i_return.setAttribute('src', 'img/cover/eatjoy.png');
+		myNode_goa.appendChild(i_eatjoy);
 
 		var i_chattie = document.createElement("img");
 		i_chattie.setAttribute('src', 'img/cover/chattie.png');
