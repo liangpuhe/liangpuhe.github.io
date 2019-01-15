@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Moving Bubble Tutorial</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <div id="main-wrapper">
+    <div class="intro">
+      <p>This is an information visualization experiment I made to inform the uncertainty of life expectancy. </p>
+      <br>
+      <p>The visualization was inspired by both <a href="https://medium.com/hci-design-at-uw/hypothetical-outcomes-plots-experiencing-the-uncertain-b9ea60d7c740">Hypothetical Outcome Plots</a> and <a href="https://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/">Years You Have Left to Live By FlowingData</a>,
+        using animation frame to convey uncertainty, and dots with physics to present lives.</p>
+      <br>
+      <p>The height each dot can reach is drawn from the <a href="https://www.ssa.gov/oact/STATS/table4c6_2009.html">distribution of life expectancy</a>. The color change after reaching the highest point shows the <a href="https://wonder.cdc.gov/ucd-icd10.html">underlying cause of death</a>.</p>
+      <br>
+      <p>When visualizing life expectancy, I wanted to put more positive feelings. I used bright cyan color to give a sense of surviving, and flying-up dots over barriers shows the striving lives. Also, the gradient of the bar barriers shows the conditional
+        probability of living through the next decade. Hope it relives the audience by saying once you make it to 80, it is not a big deal living to 95+.</p>
+    </div>
+    <div class="age">
+      <br><br>
+      <p>Your age: <span id="age"></span></p>
+      <input type="range" min="1" max="100" value="21" id="myRange">
+    </div>
+    <div class="legend">
+
+      <div class="legend1">
+        <p><span class="key-dot nervous"></span>Nervous</p>
+      </div>
+      <div class="legend1">
+        <p><span class="key-dot cancer"></span>Cancer</p>
+      </div>
+      <div class="legend1">
+        <p><span class="key-dot other"></span>Other Disease</p>
+      </div>
+    </div>
+    <div>
+      <div id="barchart">
+      </div>
+      <div id="dot-fly">
+      </div>
+    </div>
+
+  </div>
+  <!-- @end #main-wrapper -->
+
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("age");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    };
+
+    slider.onchange = function() {
+      output.innerHTML = this.value;
+      d3.selectAll("svg").remove();
+      d3.select("#dot-fly").html("");
+      loadData();
+    }
+  </script>
+  <script src="js/d3-3-5-5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+  <script type="text/javascript" src="js/draw.js"></script>
+
+
+
+</body>
