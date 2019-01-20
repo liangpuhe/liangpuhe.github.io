@@ -86,17 +86,17 @@ h2 {
                                       #CCFF33 50%,
                                       transparent 50%,
                                       transparent);*/
-  background-image: linear-gradient(to right, #FF8690, #FFC371 49%, transparent 49%, transparent);
+  background-image: linear-gradient(to top, #bfbfbf 80%, transparent 80%, transparent);
   /* background-image: linear-gradient(to right, #474747, #474747 49%, transparent 49%, transparent); */
   background-repeat: no-repeat;
-  background-size: 200% 45%;
-  background-position: 100% 100%;
+  background-size: 100% 50%;
+  background-position: 0% 200%;
   transition: all .2s ease-in;
 }
 
 .nav-item>a:hover{
   color: #4A4A4A;
-  background-position: 0 100%;
+  background-position: 0% 100%;
 }
 
 .nav-item>a:visited {
