@@ -265,7 +265,32 @@ h2 {
 
 .hci-block img{
   width: 100%;
+  background-color: none;
+}
 
+.hci-block a:hover img{
+  background-color: green;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.midair-color a:hover img{
+  background-color: #80DEEA;
+}
+
+.uncertainty-color a:hover img{
+  background-color: #FFCC80;
+}
+
+.tweety-color a:hover img{
+  background-color: #F48FB1;
+}
+
+.ink-color a:hover img{
+  background-color: #A5D6A7;
 }
 
 .hci-title {
