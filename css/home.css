@@ -86,7 +86,7 @@ h2 {
                                       #CCFF33 50%,
                                       transparent 50%,
                                       transparent);*/
-  background-image: linear-gradient(to top, #bfbfbf 80%, transparent 80%, transparent);
+  background-image: linear-gradient(to top, #bfbfbf, white 80%, transparent 80%, transparent);
   /* background-image: linear-gradient(to right, #474747, #474747 49%, transparent 49%, transparent); */
   background-repeat: no-repeat;
   background-size: 100% 50%;
@@ -265,8 +265,70 @@ h2 {
 
 .hci-block img{
   width: 100%;
-
+  background-image: linear-gradient(to top, #bfbfbf, transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: 0% 40%;
+  /* transition: all .2s ease-in; */
+  position: relative;
+  z-index: 2;
 }
+
+
+.hci-img::before {
+  height: 80%;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 2.5vw;  /*.hci-block padding*/
+  bottom: 0%;
+  left: 2.5vw;
+  background-image: linear-gradient(to top, #bfbfbf, #bfbfbf 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: 0% 60%;
+  z-index: 0;
+  transition: opacity 0.8s linear;
+  opacity: 0;
+}
+
+.hci-img:hover::before {
+  opacity: 1;
+}
+
+.midair img {
+  background-image: linear-gradient(to top, #C3FCF0, transparent 100%) !important;
+}
+
+.midair::before {
+  background-image: linear-gradient(to top, #C3FCF0, #C3FCF0 100%) !important;
+}
+
+.uncertainty img {
+  background-image: linear-gradient(to top, #CADFFE, transparent 100%) !important;
+}
+
+.uncertainty::before {
+  background-image: linear-gradient(to top, #CADFFE, #CADFFE 100%) !important;
+}
+
+
+.tweety img {
+  background-image: linear-gradient(to top, #D4B6ED, transparent 100%) !important;
+}
+
+.tweety::before {
+  background-image: linear-gradient(to top, #D4B6ED, #D4B6ED 100%) !important;
+}
+
+.ink img {
+  background-image: linear-gradient(to top, #B5E4B0, transparent 100%) !important;
+}
+
+.ink::before {
+  background-image: linear-gradient(to top, #B5E4B0, #B5E4B0 100%) !important;
+}
+
 
 .hci-title {
   margin: 10px 0 0 0;
