@@ -20,6 +20,14 @@ div > a:visited {
   padding-bottom: 10px;
 } */
 
+.bulb-color {
+  color: #FFD659;
+}
+
+.wrong-color {
+  color: #C6362D;
+}
+
 .showcase {
   box-shadow: 1px 6px 30px rgba(0, 0, 0, 0.35);
 }

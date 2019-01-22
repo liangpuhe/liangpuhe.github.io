@@ -335,6 +335,11 @@ h2 {
   font-weight: bolder;
 }
 
+#hci h2{
+  text-align: center;
+  margin: auto;
+}
+
 @media (min-width: 768px) {
   .icon_work {
     height: 8vw;
