@@ -56,6 +56,7 @@ h3 {
 
 .age {
   margin-top: 5%;
+  z-index:99;
 }
 .button {
     width: 60px;
@@ -92,7 +93,7 @@ a {
 #dot-fly{
   position: fixed;
   top: 276px;
-  left: 5em;
+  left: 25em;
 }
 
 #barchart{

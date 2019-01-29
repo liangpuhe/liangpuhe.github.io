@@ -223,8 +223,9 @@ function loadData() {
   var data_bar = data_disease.slice();
   var hide_col = 0;
 
+  var value = slider.value.slice(0);
   for (var i = 0; i < data.length; i++) {
-    if (parseInt(foci[data[i].decade].label) < slider.value) {
+    if (parseInt(foci[data[i].decade].label) < value) {
       data.splice(i, data.length - i);
       hide_col = 11 - i;
     }
@@ -239,19 +240,19 @@ function loadData() {
 function visualizeLegend(){
   var legendVals = disease_arr.slice();
 
-  console.log(legendVals)
+  //console.log(legendVals)
 
   var legendVals1 = d3.scale.ordinal()
             .domain(legendVals)
             .range(colors);
 }
 function visualizeDotsFly(dataitems) {
-  console.log(dataitems);
+  //console.log(dataitems);
   var margin = {
       top: 16,
       right: 0,
       bottom: 0,
-      left: 0
+      left: 50
     },
     width = 750 - margin.left - margin.right,
     height = 1000 - margin.top - margin.bottom;
@@ -269,7 +270,7 @@ function visualizeDotsFly(dataitems) {
   var rects = svg.selectAll("rect")
     .data(dataitems)
     .enter().append("rect")
-    .attr("x", 400)
+    .attr("x", 50)
     .attr("y", function(d, i) {
       return foci[d.decade].y;
     })
@@ -291,7 +292,7 @@ function visualizeDotsFly(dataitems) {
   var text = svg.selectAll("text")
     .data(dataitems)
     .enter().append("text")
-    .attr("x", 350)
+    .attr("x", 0)
     .attr("y", function(d, i) {
       return foci[d.decade].y + 8;
     })
@@ -405,7 +406,7 @@ function visualizeDotsFly(dataitems) {
     var r = getRandom(nervous, cancer);
     //if (r != disease_color_index_dic[choice])
     disease_color_index_dic[choice] = r;
-    console.log(disease_color_index_dic);
+    //console.log(disease_color_index_dic);
 
     force.resume();
 
@@ -442,7 +443,7 @@ function visualizeDotsFly(dataitems) {
         }
       })
       .attr("cx", function(d) {
-        return d.x;
+        return d.x-350;
       })
       .attr("cy", function(d) {
         return d.y;
