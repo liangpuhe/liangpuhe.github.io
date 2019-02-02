@@ -103,6 +103,16 @@ a {
   z-index: 99;
 }
 
+#curtain{
+  position: fixed;
+  left: 55em;
+  top: 276px;
+  height: 600px;
+  width: 100em;
+  background: #F6F3ED;
+  z-index: 98;
+}
+
 
 
 .key-dot {
