@@ -90,6 +90,33 @@
 			</div>
 
 			<div class="project-block">
+				<a href="return.html">
+					<div id="scene_return" class="scene" data-hover-only="true" data-relative-input="true">
+						<div data-depth="0.00"><img src="img/cover/background.png"></div>
+						<div data-depth="0.10" class="circle_img"><img src="img/cover/return_circles.png"></div>
+						<div data-depth="0.00"><img src="img/cover/return_text.png"></div>
+						<div data-depth="0.30"><img src="img/cover/return_graph.png"></div>
+					</div>
+					<div class="project-title">E-commerce Return: Enterprise Web Application in SAP EWM</div>
+					<div class="project-subtitle">Design Interactions with Systems and Products in Return Workflow</div>
+				</a>
+			</div>
+
+
+			<div class="project-block">
+				<a href="https://puhe-wunder-design-challenge.webflow.io/">
+					<div id="scene_wunder" class="scene" data-hover-only="true" data-relative-input="true">
+						<div data-depth="0.00"><img src="img/cover/background.png"></div>
+						<div data-depth="0.10" class="circle_img"><img src="img/cover/wunder_circles.png"></div>
+						<div data-depth="0.00"><img src="img/cover/wunder_text.png"></div>
+						<div data-depth="0.30"><img src="img/cover/wunder_graph.png"></div>
+					</div>
+					<div class="project-title">Mobile App for Shuttle Driver to Handle Pick-up Requests</div>
+					<div class="project-subtitle">Wunder Mobility Design Challenge</div>
+				</a>
+			</div>
+
+			<div class="project-block">
 				<a href="chattie.html">
 					<div id="scene_chattie" class="scene" data-hover-only="true" data-relative-input="true">
 						<div data-depth="0.00"><img src="img/cover/background.png"></div>
@@ -103,20 +130,6 @@
 				</a>
 			</div>
 
-
-
-			<div class="project-block">
-				<a href="return.html">
-					<div id="scene_return" class="scene" data-hover-only="true" data-relative-input="true">
-						<div data-depth="0.00"><img src="img/cover/background.png"></div>
-						<div data-depth="0.10" class="circle_img"><img src="img/cover/return_circles.png"></div>
-						<div data-depth="0.00"><img src="img/cover/return_text.png"></div>
-						<div data-depth="0.30"><img src="img/cover/return_graph.png"></div>
-					</div>
-					<div class="project-title">E-commerce Return: Enterprise Web Application in SAP EWM</div>
-					<div class="project-subtitle">Design Interactions with Systems and Products in Return Workflow</div>
-				</a>
-			</div>
 			<div class="project-block">
 				<a href="co-express.html">
 					<div id="scene_co-express" class="scene" data-hover-only="true" data-relative-input="true">
@@ -127,10 +140,11 @@
 					</div>
 					<div class="project-title">Co-Express Delivery Picking</div>
 					<div class="project-subtitle">Design a Situated Collaborative Tool in Community</div>
-
 				</a>
 			</div>
-			<div class="project-block">
+
+
+			<!-- <div class="project-block">
 				<a href="gifts-of-art.html">
 					<div id="scene_goa" class="scene" data-hover-only="true" data-relative-input="true">
 						<div data-depth="0.00"><img src="img/cover/background.png"></div>
@@ -141,7 +155,7 @@
 					<div class="project-title">Gifts of Art: Inventory Management</div>
 					<div class="project-subtitle">Integrate Digital Tool and Paper Files in Inventory Management</div>
 				</a>
-			</div>
+			</div> -->
 			<!-- <div class="project-block">
 				<a href="data-driven-detroit.html">
 						<img src="img/cover_d3.png">
@@ -254,7 +268,7 @@
 		scene = document.getElementById('scene_eatjoy');
 		parallax = new Parallax(scene);
 
-		scene = document.getElementById('scene_goa');
+		scene = document.getElementById('scene_wunder');
 		parallax = new Parallax(scene);
 
 		scene = document.getElementById('scene_return');
@@ -277,9 +291,9 @@
 			myNode_eatjoy.removeChild(myNode_eatjoy.firstChild);
 		}
 
-		var myNode_goa = document.getElementById("scene_goa");
-		while (myNode_goa.firstChild) {
-			myNode_goa.removeChild(myNode_goa.firstChild);
+		var myNode_wunder = document.getElementById("scene_wunder");
+		while (myNode_wunder.firstChild) {
+			myNode_wunder.removeChild(myNode_wunder.firstChild);
 		}
 
 		var myNode_return = document.getElementById("scene_return");
@@ -289,7 +303,7 @@
 
 		var i_eatjoy = document.createElement("img");
 		i_return.setAttribute('src', 'img/cover/eatjoy.png');
-		myNode_goa.appendChild(i_eatjoy);
+		myNode_wunder.appendChild(i_eatjoy);
 
 		var i_chattie = document.createElement("img");
 		i_chattie.setAttribute('src', 'img/cover/chattie.png');
@@ -301,13 +315,13 @@
 		myNode_co.appendChild(i_co);
 
 
-		var i_goa = document.createElement("img");
-		i_goa.setAttribute('src', 'img/cover/goa.png');
-		myNode_goa.appendChild(i_goa);
+		var i_wunder = document.createElement("img");
+		i_wunder.setAttribute('src', 'img/cover/wunder.png');
+		myNode_wunder.appendChild(i_wunder);
 
 		var i_return = document.createElement("img");
 		i_return.setAttribute('src', 'img/cover/return.png');
-		myNode_goa.appendChild(i_return);
+		myNode_return.appendChild(i_return);
 
 	}
 </script>
