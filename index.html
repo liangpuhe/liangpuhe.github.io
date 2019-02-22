@@ -79,7 +79,7 @@
 			<div class="project-block">
 				<a href="eatjoy.html">
 					<div id="scene_eatjoy" class="scene" data-hover-only="true" data-relative-input="true">
-						<div data-depth="0.00"><img src="img/cover/background.png"></div>
+						<div data-depth="0.00"><img src="img/cover/eatjoy_mask.png"></div>
 						<div data-depth="0.10" class="circle_img"><img src="img/cover/eatjoy_circles.png"></div>
 						<div data-depth="0.00"><img src="img/cover/eatjoy_text.png"></div>
 						<div data-depth="0.30"><img src="img/cover/eatjoy_graph.png"></div>
@@ -92,7 +92,7 @@
 			<div class="project-block">
 				<a href="return.html">
 					<div id="scene_return" class="scene" data-hover-only="true" data-relative-input="true">
-						<div data-depth="0.00"><img src="img/cover/background.png"></div>
+						<div data-depth="0.00"><img src="img/cover/return_mask.png"></div>
 						<div data-depth="0.10" class="circle_img"><img src="img/cover/return_circles.png"></div>
 						<div data-depth="0.00"><img src="img/cover/return_text.png"></div>
 						<div data-depth="0.30"><img src="img/cover/return_graph.png"></div>
@@ -106,7 +106,7 @@
 			<div class="project-block">
 				<a href="https://puhe-wunder-design-challenge.webflow.io/">
 					<div id="scene_wunder" class="scene" data-hover-only="true" data-relative-input="true">
-						<div data-depth="0.00"><img src="img/cover/background.png"></div>
+						<div data-depth="0.00"><img src="img/cover/wunder_mask.png"></div>
 						<div data-depth="0.10" class="circle_img"><img src="img/cover/wunder_circles.png"></div>
 						<div data-depth="0.00"><img src="img/cover/wunder_text.png"></div>
 						<div data-depth="0.30"><img src="img/cover/wunder_graph.png"></div>
@@ -119,7 +119,7 @@
 			<div class="project-block">
 				<a href="chattie.html">
 					<div id="scene_chattie" class="scene" data-hover-only="true" data-relative-input="true">
-						<div data-depth="0.00"><img src="img/cover/background.png"></div>
+						<div data-depth="0.00"><img src="img/cover/chattie_mask.png"></div>
 						<div data-depth="0.10" class="circle_img"><img src="img/cover/chattie_circles.png"></div>
 						<div data-depth="0.00"><img src="img/cover/chattie_text.png"></div>
 						<div data-depth="0.30"><img src="img/cover/chattie_graph.png"></div>
@@ -130,7 +130,7 @@
 				</a>
 			</div>
 
-			<div class="project-block">
+			<!-- <div class="project-block">
 				<a href="co-express.html">
 					<div id="scene_co-express" class="scene" data-hover-only="true" data-relative-input="true">
 						<div data-depth="0.00"><img src="img/cover/background.png"></div>
@@ -141,7 +141,7 @@
 					<div class="project-title">Co-Express Delivery Picking</div>
 					<div class="project-subtitle">Design a Situated Collaborative Tool in Community</div>
 				</a>
-			</div>
+			</div> -->
 
 
 			<!-- <div class="project-block">
@@ -259,8 +259,8 @@
 <script>
 	// Make dynamic cover img
 	if ($(window).width() >= 992) {
-		var scene = document.getElementById('scene_co-express');
-		var parallax = new Parallax(scene);
+		// var scene = document.getElementById('scene_co-express');
+		// var parallax = new Parallax(scene);
 
 		scene = document.getElementById('scene_chattie');
 		parallax = new Parallax(scene);
@@ -281,10 +281,10 @@
 			myNode.removeChild(myNode.firstChild);
 		}
 
-		var myNode_co = document.getElementById("scene_co-express");
-		while (myNode_co.firstChild) {
-			myNode_co.removeChild(myNode_co.firstChild);
-		}
+		// var myNode_co = document.getElementById("scene_co-express");
+		// while (myNode_co.firstChild) {
+		// 	myNode_co.removeChild(myNode_co.firstChild);
+		// }
 
 		var myNode_eatjoy = document.getElementById("scene_eatjoy");
 		while (myNode_eatjoy.firstChild) {
@@ -310,9 +310,9 @@
 		myNode.appendChild(i_chattie);
 
 
-		var i_co = document.createElement("img");
-		i_co.setAttribute('src', 'img/cover/co-express.png');
-		myNode_co.appendChild(i_co);
+		// var i_co = document.createElement("img");
+		// i_co.setAttribute('src', 'img/cover/co-express.png');
+		// myNode_co.appendChild(i_co);
 
 
 		var i_wunder = document.createElement("img");
