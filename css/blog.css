@@ -48,8 +48,8 @@
 
 .blog-header-chattie {
   background-image: url('../img/Chattie.png');
-  background-position: 80% 200px;
-  background-size: 275px auto;
+  background-position: calc(50% - 320px) 295px;
+  background-size: 80px auto;
   /* transform: translate(10px, 10px); */
   /* background-color: #FFC972; */
   background-repeat: no-repeat;
