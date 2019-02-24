@@ -42,20 +42,60 @@
   color: #00AB81 !important;
 }
 
+.chattie {
+  color: #696969 !important;
+}
+
 .blog-header-chattie {
   background-image: url('../img/Chattie.png');
-  background-position: center 250px;
-  background-size: 700px auto;
-  background-color: #FFC972;
+  background-position: 80% 200px;
+  background-size: 275px auto;
+  /* transform: translate(10px, 10px); */
+  /* background-color: #FFC972; */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.blog-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.blog-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.blog-header-container {
+  display: block;
+  height: 550px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
 .blog-header-eatjoy {
-  background-image: url('../img/Chattie.png');
-  background-position: center 250px;
-  background-size: 700px auto;
-  background-color: #74CFB3;
+  background-image: linear-gradient(180deg, rgba(59,186,150, .15), rgba(59,186,150, .85)), url('../img/eatjoy_header.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  /* background-color: #74CFB3; */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -224,6 +264,22 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 200%;
+}
+
+.blog-header-text {
+  margin-top: 11px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.blog-header-log {
+  background-image: linear-gradient(180deg, rgba(158, 199, 216, .25), rgba(158, 199, 216, .85)), url('../img/logistics.jpeg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 iframe {

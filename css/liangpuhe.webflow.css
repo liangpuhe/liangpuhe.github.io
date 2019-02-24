@@ -961,34 +961,7 @@ blockquote {
   color: rgba(93, 93, 93, .83);
 }
 
-.blog-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 25px;
-  margin-bottom: auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  font-family: Montserrat, sans-serif;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-}
 
-.blog-header-container {
-  display: block;
-  height: 350px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  text-align: center;
-}
 
 .blog-header-div {
   background-image: url('../img/Co-Express.png');
@@ -1004,15 +977,6 @@ blockquote {
   background-position: center 50px;
   background-size: 700px auto;
   background-color: #4A90E2;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.blog-header-log {
-  background-image: linear-gradient(180deg, rgba(158, 199, 216, .25), rgba(158, 199, 216, .85)), url('../img/logistics.jpeg');
-  background-position: 0px 0px, 0px 0px;
-  background-size: auto, cover;
-  background-color: #D23930;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
