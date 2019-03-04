@@ -160,9 +160,10 @@ h2 {
 }
 
 .text-name:hover{
-  background: linear-gradient(45deg, #FF8690, #FFC371) !important;
+  background: linear-gradient(45deg, #4e4e4e,#989898) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
+  /* color: #4a4a4a !important; */
 }
 
 .nav-ph {
@@ -202,6 +203,8 @@ h2 {
 .intro>div {
   padding: 0.3rem 0;
 }
+
+
 
 /* mobile first for project covers */
 
@@ -352,12 +355,17 @@ h2 {
   margin-right: auto;
   vertical-align: middle;
   padding: 4% 0 2% 0;
+  transition: all .2s ease-in-out;
 }
 
 .icon_work~p {
   font-size: 14px;
   text-align: center;
   font-weight: bolder;
+}
+
+.icon_work:hover{
+  transform:scale(1.2,1.2);
 }
 
 #hci h2{

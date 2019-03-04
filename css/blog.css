@@ -1,3 +1,8 @@
+h1{
+  font-size: 30px;
+}
+
+
 .brand-text {
   font-family: 'Abril Fatface', 'Open Sans', serif;
   color: white;
@@ -42,8 +47,22 @@
   color: #00AB81 !important;
 }
 
+.duudo {
+  color: #EA7470 !important;
+}
+
 .chattie {
   color: #696969 !important;
+}
+
+.grey {
+  color: #888888 !important;
+}
+
+.black {
+  .duudo {
+    color: black !important;
+  }
 }
 
 .blog-header-chattie {
@@ -93,6 +112,15 @@
 
 .blog-header-eatjoy {
   background-image: linear-gradient(180deg, rgba(59,186,150, .15), rgba(59,186,150, .85)), url('../img/eatjoy_header.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  /* background-color: #74CFB3; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.blog-header-duudo {
+  background-image: linear-gradient(180deg, rgba(245,158,175, .20), rgba(245,158,175, .85)), url('../img/duudo/poster_after.png');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   /* background-color: #74CFB3; */
@@ -163,8 +191,8 @@
   /* margin-bottom: 35px; */
   font-family: 'Open Sans', sans-serif;
   color: #545454;
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 25px;
   font-weight: 300;
 }
 
@@ -183,7 +211,7 @@
 .blog-subtitle {
   font-size: 20px;
   line-height: 35px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .blog-content-highlight {
@@ -261,9 +289,9 @@
 
 .screen-title {
   font-family: Lato;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 200%;
+  line-height: 180%;
 }
 
 .blog-header-text {
@@ -282,7 +310,33 @@
   background-attachment: fixed;
 }
 
-iframe {
+.icon-img {
+  width: 50%;
+}
+
+.iframe-div {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20%;
+  padding-top: 10%;
+}
+
+blockquote {
+  margin: 0 auto;
+  padding: 0.6em;
+  border-left: 5px solid #FFE2DD;
+  quotes: "\201C""\201D""\2018""\2019";
+  width: 100%;
+}
+
+blockquote p {
+  color: #888888;
+  font-size: 12pt;
+  font-style: italic;
+  line-height: 1.4;
+
+}
+
+.large-pic {
+  max-width: 1400px;
 }

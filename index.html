@@ -38,7 +38,7 @@
       </span>
     </a>
 		<div class="nav-ph">
-			<div class="nav-name"><a class="text-name d-none d-lg-block d-md-block" href="#experience">Puhe Liang</a></div>
+			<div class="nav-name"><a class="text-name d-none d-lg-block d-md-block" href="#about">Puhe Liang</a></div>
 			<div class="nav-jobSearch">Looking for 2019 UX position</div>
 			<div class="nav-job mt-2 mb-0">Full-time (Spring)</div>
 			<div class="nav-job">Internship (Winter)</div>
@@ -74,7 +74,18 @@
 	</nav>
 	<div class="container-fluid p-0">
 		<section id="ux">
-
+			<div class="project-block">
+				<a href="duudo.html">
+					<div id="scene_duudo" class="scene" data-hover-only="true" data-relative-input="true">
+						<div data-depth="0.00"><img src="img/cover/duudo_mask.png"></div>
+						<div data-depth="0.10" class="circle_img"><img src="img/cover/duudo_circles.png"></div>
+						<div data-depth="0.30"><img src="img/cover/duudo_graph.png"></div>
+						<div data-depth="0.00"><img src="img/cover/duudo_text.png"></div>
+					</div>
+					<div class="project-title">Duudo: AR App for Social and Doodle</div>
+					<div class="project-subtitle">A Social AR App for Doodlers to Draw on Real-world Objects</div>
+				</a>
+			</div>
 
 			<div class="project-block">
 				<a href="eatjoy.html">
@@ -126,7 +137,7 @@
 						<div data-depth="0.30"><img src="img/cover/wunder_graph.png"></div>
 					</div>
 					<div class="project-title">Mobile App for Shuttle Driver to Handle Pick-up Requests</div>
-					<div class="project-subtitle">8-hour Design Challenge</div>
+					<div class="project-subtitle">Explore Swipe Interactions on Material Card Design</div>
 				</a>
 			</div>
 
@@ -212,7 +223,7 @@
 					<p>I am a master student in Human Computer Interaction at University of Michigan, graduating in 2019. I am passionate about <strong>multimodal interactive systems</strong>. I design and prototype tools to engage communication between virtual and physcial
 						world: </p>
 					<div class="row mx-4 mt-3 mb-3 pt-2 pb-2">
-						<div class="col-md"><a href="chattie.html" target="_blank"><img class="icon_work" src="img/icon_voice.png"></img>
+						<div id="icon_1" class="col-md"><a href="chattie.html" target="_blank"><img class="icon_work" src="img/icon_voice.png"></img>
 							<p>Interaction with voice assistant</p></a>
 						</div>
 						<div class="col-md"><a href="mid-air.html" target="_blank"><img class="icon_work" src="img/icon_3d.png"></img>
@@ -259,8 +270,8 @@
 <script>
 	// Make dynamic cover img
 	if ($(window).width() >= 992) {
-		// var scene = document.getElementById('scene_co-express');
-		// var parallax = new Parallax(scene);
+		var scene = document.getElementById('scene_duudo');
+		var parallax = new Parallax(scene);
 
 		scene = document.getElementById('scene_chattie');
 		parallax = new Parallax(scene);
@@ -281,10 +292,10 @@
 			myNode.removeChild(myNode.firstChild);
 		}
 
-		// var myNode_co = document.getElementById("scene_co-express");
-		// while (myNode_co.firstChild) {
-		// 	myNode_co.removeChild(myNode_co.firstChild);
-		// }
+		var myNode_co = document.getElementById("scene_duudo");
+		while (myNode_co.firstChild) {
+			myNode_co.removeChild(myNode_co.firstChild);
+		}
 
 		var myNode_eatjoy = document.getElementById("scene_eatjoy");
 		while (myNode_eatjoy.firstChild) {
@@ -310,9 +321,9 @@
 		myNode.appendChild(i_chattie);
 
 
-		// var i_co = document.createElement("img");
-		// i_co.setAttribute('src', 'img/cover/co-express.png');
-		// myNode_co.appendChild(i_co);
+		var i_duudo = document.createElement("img");
+		i_co.setAttribute('src', 'img/cover/duudo.png');
+		myNode_co.appendChild(i_duudo);
 
 
 		var i_wunder = document.createElement("img");
