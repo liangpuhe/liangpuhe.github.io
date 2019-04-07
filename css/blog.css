@@ -70,13 +70,12 @@ h1{
 }
 
 .blog-header-chattie {
-  background-image: url('../img/Chattie.png');
-  background-position: calc(50% - 320px) 295px;
-  background-size: 80px auto;
-  /* transform: translate(10px, 10px); */
-  /* background-color: #FFC972; */
+
+  background-position: 50% 365px;
+  background-size: 600px auto;
+  background-image: url('../img/chattie_hero.png');
+  /* background-color: #74CFB3; */
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .blog-center {
