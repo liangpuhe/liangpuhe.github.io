@@ -244,13 +244,17 @@ h1{
   margin-right: .5em;
   /* color: #D63913; */
   font-size: 1.3em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .seq_icon {
   margin-right: .5em;
   /* color: #D63913; */
   font-size: 1.8rem;
+}
+
+.weight_600 {
+  font-weight: 600;
 }
 
 .red {
