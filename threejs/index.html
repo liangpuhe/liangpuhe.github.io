@@ -1,0 +1,208 @@
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="module">
+    import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r115/build/three.module.js';
+    import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r115/examples/jsm/controls/OrbitControls.js';
+
+    function main() {
+      const canvas = document.querySelector('#c');
+
+      document.addEventListener('mousemove', handleMouseMove, false);
+      const renderer = new THREE.WebGLRenderer({canvas, antialias: true});
+      renderer.setClearColor( 0xfff6e6 );
+
+      // Enable shadow mapping
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+      const fov = 45;
+      const aspect = 2;  // the canvas default
+      const near = 0.1;
+      const far = 100;
+      const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+      camera.position.set(0, 3, 14);
+
+      const controls = new OrbitControls(camera, canvas);
+      controls.target.set(0, 0, 0);
+      controls.update();
+
+      const scene = new THREE.Scene();
+
+      {
+        const ambientLight = new THREE.HemisphereLight(
+          0xddeeff, // bright sky color
+          0x202020, // dim ground color
+          2, // intensity
+        );
+
+        scene.add( ambientLight );
+      }
+
+      {
+        var pointLight = new THREE.PointLight( 0xffffff, 1 );
+        pointLight.position.set( 0, 50, 5 );
+        pointLight.castShadow = true;
+        pointLight.shadow.mapSize.width = 1024;
+        pointLight.shadow.mapSize.height = 1024;
+        scene.add( pointLight );
+      }
+
+      {
+        var shadowMaterial = new THREE.ShadowMaterial( { color: 0xeeeeee } );
+        shadowMaterial.opacity = 0.5;
+        var groundMesh = new THREE.Mesh(
+          new THREE.BoxGeometry( 100, -4, 100 ),
+          shadowMaterial
+        );
+        groundMesh.receiveShadow = true;
+        scene.add( groundMesh );
+      }
+
+      const radius = 1;
+      const height = 2;
+      const radiusSegments = 10;
+      const openEnded = false;
+      const thetaStart = 0;
+      const thetaLength = Math.PI * 2;
+
+      const sphereGeometry = new THREE.DodecahedronBufferGeometry(1,4);
+      const circleGeometry = new THREE.CircleBufferGeometry(0.3, 30);
+
+      function makeInstance(geometry, color, x, z=0) {
+        const material = new THREE.MeshStandardMaterial({color});
+
+        const geom = new THREE.Mesh(geometry, material);
+        geom.castShadow = true;
+        geom.position.x = x;
+        geom.position.y = 0;
+        geom.position.z = z;
+
+        return geom;
+      }
+
+      const balls = [
+        makeInstance(sphereGeometry, 0xffffff,  1.5),
+        makeInstance(sphereGeometry, 0xffffff, -1.5)
+      ];
+
+      const pupils = [
+        makeInstance(circleGeometry, 0x000000,  0, 1),
+        makeInstance(circleGeometry, 0x000000, 0, 1)
+      ];
+
+      var leftPupilPivot = new THREE.Group();
+      leftPupilPivot.add(pupils[0]);
+      balls[0].add(leftPupilPivot);
+
+      var rightPupilPivot = new THREE.Group();
+      rightPupilPivot.add(pupils[1]);
+      balls[1].add(rightPupilPivot);
+
+      scene.add(balls[0]);
+      scene.add(balls[1]);
+
+      function resizeRendererToDisplaySize(renderer) {
+        const canvas = renderer.domElement;
+        const width = canvas.clientWidth;
+        const height = canvas.clientHeight;
+        const needResize = canvas.width !== width || canvas.height !== height;
+        if (needResize) {
+          renderer.setSize(width, height, false);
+        }
+        return needResize;
+      }
+
+      function render(time) {
+        time *= 0.001;  // convert time to seconds
+
+        if (resizeRendererToDisplaySize(renderer)) {
+          const canvas = renderer.domElement;
+          camera.aspect = canvas.clientWidth / canvas.clientHeight;
+          camera.updateProjectionMatrix();
+        }
+
+        const speed = 1;
+        const rot = time * speed;
+
+        //leftPupilPivot.rotation.y  = rot;
+
+        //rightPupilPivot.rotation.x  = rot;
+
+        //rotateAroundObjectAxis(leftEye, new THREE.Vector3(1, 0, 0), )
+
+        // cubes.forEach((cube, ndx) => {
+        //   const speed = 1 + ndx * .1;
+        //   const rot = time * speed;
+        //   cube.rotation.x = rot;
+        //   cube.rotation.y = rot;
+        // });
+
+        // cubes.forEach(cube => {
+        //   const speed = 1;
+        //   const len = time * speed;
+        //   cube.height = 1.5 + len;
+        // })
+
+        renderer.render(scene, camera);
+
+        requestAnimationFrame(render);
+      }
+
+      function handleMouseMove(e) {
+        // target.x = e.offsetX;
+        // target.y = e.offsetY;
+        // target.z = -4;
+
+        var clientWidth = document.body.clientWidth;
+        var clientHeight = document.body.clientHeight;
+        var rotationX = e.clientX/clientWidth - 0.5;
+        var rotationY = e.clientY/clientHeight - 0.5;
+
+
+        leftPupilPivot.rotation.y = rotationX;
+        leftPupilPivot.rotation.x = rotationY;
+
+        rightPupilPivot.rotation.y = rotationX;
+        rightPupilPivot.rotation.x = rotationY;
+
+        console.log(rotationX);
+        // console.log("height is " + e.clientY/document.body.clientHeight > 0.5 ? 0.5 : -0.5);
+
+      };
+
+      function rotateAroundObjectAxis( object, axis, radians ) {
+        rotationMatrix = new THREE.Matrix4();
+        rotationMatrix.makeRotationAxis( axis.normalize(), radians );
+        object.matrix.multiplySelf( rotationMatrix );                       // post-multiply
+        object.rotation.setEulerFromRotationMatrix(object.matrix, object.order);
+      }
+
+      function toRadians(angle) {
+      	return angle * (Math.PI / 180);
+      }
+
+
+
+
+
+      requestAnimationFrame(render);
+
+    }
+
+    // function handleMouseMove(event) {
+    //   var ty = 1 - (event.clientY / 100)*2;
+    //   mousePos = {x:tx, y:ty};
+    // }
+
+    main();
+  </script>
+</head>
+
+<body>
+  <canvas id="c"></canvas>
+</body>
+
+</html>
