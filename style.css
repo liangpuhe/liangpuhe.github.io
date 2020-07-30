@@ -1,0 +1,78 @@
+#bottom {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+body {
+ font-family: 'Lato', 'Open Sans', sans-serif;
+ font-weight: 400;
+ color:#545454;
+}
+
+.content {
+  position: relative;
+  top: 100px;
+  padding-left: 15%;
+  display: flex;
+}
+
+.intro {
+  width: 590px;
+  margin-right: 30px;
+}
+
+.headline {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.work, .fun {
+  margin-bottom: 40px;
+  display: table-cell;
+}
+
+@media only screen and (max-width:800px) {
+  .work, .fun {
+    display: block
+  }
+  .intro {
+    width: 340px;
+    margin-right: 30px;
+  }
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.work {
+  width: 380px;
+}
+
+.fun {
+  width: 210px;
+  margin-right: 60px;
+}
+
+.memoji {
+  width: 30%;
+  display: inline-flex;
+}
+
+.download {
+  margin-top: 30px;
+}
+
+.download > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.download > a:hover {
+  text-decoration: underline;
+}
