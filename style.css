@@ -4,6 +4,11 @@
   z-index: 1;
 }
 
+#top {
+  position: absolute;
+  top: 0;
+}
+
 body {
  font-family: 'Lato', 'Open Sans', sans-serif;
  font-weight: 400;
@@ -52,6 +57,13 @@ body {
 
 .memoji {
   display: inline-flex;
+  width: 240px;
+}
+
+.divider {
+  width: 1px;
+  background-color: #545454;
+  height: 100%;
 }
 
 .download {
