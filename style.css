@@ -10,10 +10,10 @@
 }
 
 body {
- font-family: 'Lato', 'Open Sans', sans-serif;
+ font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
  font-weight: 400;
  color:#545454;
- font-size: 14px;
+ font-size: 16px;
 }
 
 .content {
@@ -25,7 +25,7 @@ body {
 }
 
 .intro {
-  width: 590px;
+  width: 650px;
   margin-right: 30px;
 }
 
@@ -34,6 +34,7 @@ body {
   margin-bottom: 30px;
   font-weight: 300;
   font-size: 24px;
+  font-family: 'Mukta', 'Lato', 'Open Sans', sans-serif;
 }
 
 .work, .fun {
@@ -42,16 +43,17 @@ body {
 }
 
 .header {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Mukta', 'Lato', 'Open Sans', sans-serif;
 }
 
 .work {
-  width: 380px;
+  width: 410px;
 }
 
 .fun {
-  width: 210px;
+  width: 240px;
   margin-right: 60px;
 }
 
@@ -80,7 +82,7 @@ body {
   text-decoration: underline;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:960px) {
   .work, .fun {
     display: block
   }
