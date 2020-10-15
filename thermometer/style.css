@@ -1,0 +1,208 @@
+:root {
+  --input-box-color: #f3f3f4;
+  --px-color: #fa7676;
+  --rem-color: #329cfc;
+  --orange: #F9BE72;
+  --orange-foreground: #F6733E;
+  --background-grey: #F7F7F7;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  display: table;
+  font-family: "Nunito", "PT Sans", sans-serif;
+}
+
+body{
+  background: var(--background-grey);
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 100px;
+  position: absolute;
+  right: 30px;
+  top: -160px;
+  display: block;
+}
+
+.text-body {
+  /* background: #f8f8f8; */
+  min-width: 600px;
+  max-width: 600px;
+  margin: calc(55vh - 180px) 10% calc(50vh - 230px) 15%;
+  display: inline-block;
+  position: relative;
+  /* vertical-align: middle; */
+}
+
+.text-background {
+  background: white;
+  border-color: #000;
+  border-style: solid;
+  border-width: 4px;
+}
+
+.arrows {
+  position: relative;
+  top: 10px;
+
+}
+
+.headline {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: 800;
+  /* background-color: white; */
+  color: #000;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.main-form {
+  /* sbackground: #fff; */
+  padding: 20px 50px 40px 50px;
+  border-radius: 5px 5px 4px 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
+}
+
+.left,
+.right,
+.arrows {
+  display: inline-block;
+  padding: 20px;
+}
+
+.text-area {
+  color: #333;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--input-box-color);
+  border: 1px solid transparent;
+}
+
+.left .text-area:focus-within {
+  border: 1px solid var(--px-color);
+  background-color: white;
+}
+
+.right .text-area:focus-within {
+  border: 1px solid var(--rem-color);
+  background-color: white;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  height: 40px;
+  width: 80px;
+  border-width: 0;
+  line-height: 40px;
+  font-size: 24px;
+  color: #333;
+  background-color: var(--input-box-color);
+}
+
+input:focus {
+  outline: none;
+  background-color: white;
+}
+
+input::placeholder {
+  font-size: 24px;
+  color: #bbb;
+}
+
+i.unit.fr {
+  font-style: initial;
+  /* font-weight: bold; */
+  color: var(--px-color) !important;
+}
+
+i.unit.cel {
+  font-style: initial;
+  /* font-weight: bold; */
+  color: var(--rem-color) !important;
+}
+
+.viz {
+  height: 76vh;
+  max-height: 80vw;
+  display: inline-block;
+  margin-top: 10vh;
+}
+
+.wrapper {
+  position: relative;
+  height: 59.3vh;
+  top: -100%;
+  left: 7vh;
+}
+
+.temperature {
+  background-color: #F1574A;
+  width: 3.6vh;
+  height: 21vh;
+  max-height: 56vh;
+  position: absolute;
+  bottom: 0;
+}
+
+.thermometer {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 750px) {
+  .text-body {
+    margin: calc(60vh - 230px) 5% calc(50vh - 230px) 5%;
+    min-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .viz {
+    display: none;
+  }
+}
+
+
+/* latin */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79D0KExcOPIDU.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+    url(https://fonts.gstatic.com/s/ptsans/v11/jizfRExUiTo99u79B_mh0O6tLR8a8zI.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}

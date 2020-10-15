@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="text-body">
+<div class="text-background">
+<div class="headline">
+  Fahrenheit <span>↔︎<span> Celsius
+    <div class="subtitle">(32°F − 32) × 5/9 = 0°C</div>
+</div>
+<div class="main-form text-center">
+  <form class="">
+    <fieldset class="">
+      <div class="left">
+        <div class="text-area">
+          <input id="fr" class="" placeholder="32" onfocus="this.placeholder = ''" onblur="this.placeholder = '32'">
+          <i class="unit fr">°F</i>
+        </div>
+      </div>
+      <div class="arrows">
+        <svg width="40" height="30">
+          <g fill="#aaa">
+              <path d="M39.2175032,4.71042471 L14.5688546,4.71042471 L14.5688546,1.62162162 C14.5688546,1.04247104 13.7863578,0.656370656 13.3951094,0.849420849 L1.26640927,7.02702703 C0.483912484,7.41312741 0.875160875,8.57142857 1.65765766,8.57142857 L39.2175032,8.57142857 C39.6087516,8.57142857 40,8.18532819 40,7.7992278 L40,5.48262548 C40,5.0965251 39.6087516,4.71042471 39.2175032,4.71042471 Z" id="Path"></path>
+              <path d="M1.65765766,20.1544402 L26.3063063,20.1544402 L26.3063063,23.2432432 C26.3063063,23.8223938 27.0888031,24.2084942 27.4800515,24.015444 L39.4131274,18.030888 C40.1956242,17.6447876 39.8043758,16.4864865 39.021879,16.4864865 L1.65765766,16.2934363 C1.26640927,16.2934363 0.875160875,16.6795367 0.875160875,17.0656371 L0.875160875,19.3822394 C0.875160875,19.7683398 1.26640927,20.1544402 1.65765766,20.1544402 Z" id="Path"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="right">
+        <div class="text-area">
+          <input id="cel" class="" placeholder="0" onfocus="this.placeholder = ''" onblur="this.placeholder = '0'">
+          <i class="unit cel">°C</i>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <!-- <div><p id="result"></p></div> -->
+</div>
+</div>
+<div id="emoji" class="emoji"></div>
+</div>
+<div class="viz">
+  <img class="thermometer" src="thermometer.png"/>
+  <div class="wrapper"><div class="temperature" id="temperature"/></div>
+</div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
+  </script>
+  <script src="script.js" />
+  </script>
+  <script>
+    const frInput = $("#fr").forceNumeric();
+    const celInput = $("#cel").forceNumeric();
+    const result = $("#result");
+    const emoji = $("#emoji");
+    const temp = $("#temperature");
+    convert();
+  </script>
+  </html>
