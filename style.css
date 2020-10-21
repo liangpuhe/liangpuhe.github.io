@@ -34,7 +34,7 @@ body {
   margin-bottom: 30px;
   font-weight: 300;
   font-size: 24px;
-  font-family: 'Mukta', 'Lato', 'Open Sans', sans-serif;
+  font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
 }
 
 .work, .fun {
@@ -45,7 +45,7 @@ body {
 .header {
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Mukta', 'Lato', 'Open Sans', sans-serif;
+  font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
 }
 
 .work {
@@ -70,17 +70,34 @@ body {
 
 .download {
   margin-top: 30px;
+  font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
+
+  /* display: flex;
+  width: 125px;
+  height: 45px;
+  background-color: #7DDCA0;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px transparent; */
+}
+
+.download > a:hover {
+  /* border: solid 2px black; */
+  background-position: 0% 100%;
+
 }
 
 .download > a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  font-weight: 300;
+  background-image: linear-gradient(to top, #7DDCA0 80%, transparent 0%, transparent);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: 0% 120%;
+  transition: all .1s ease-in
 }
 
-.download > a:hover {
-  text-decoration: underline;
-}
 
 @media only screen and (max-width:960px) {
   .work, .fun {
