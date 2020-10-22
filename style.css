@@ -12,7 +12,8 @@
 body {
  font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
  font-weight: 400;
- color:#545454;
+ /* color:#545454; */
+ color: black;
  font-size: 16px;
 }
 
