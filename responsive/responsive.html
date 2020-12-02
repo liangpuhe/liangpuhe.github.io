@@ -211,28 +211,20 @@ Introduce Responsive Design to Low-code Platform
 </div>
 <div class="header-image"><img alt="" width="100%" src="responsive.png" loading='lazy'/></div>
 <div class="subtitle">My role at Appian</div>
-<p>Appian is a low-code platform where business developers can build custom BPM applications without extensive coding. 
-  User-facing interfaces can be easily created by selecting and combining ready-to-use UI components. 
-  The UI components are available with a set of configuration options. 
-  Depending on business needs, components' functions can be configured to display data or trigger a process. The look of the components is also configurable to display in different styles.
+<p>Appian is a low-code platform where business developers can build custom BPM applications without extensive coding. User-facing interfaces can be easily created by selecting and combining ready-to-use UI components. The UI components are available with a set of configuration options. Depending on business needs, components' functions can be configured to display data or trigger a process. The looks of them are also configurable to show in different styles.
 </p>
 <div class="image"><img class="img-border" alt="" src="https://docs.appian.com/suite/help/17.3/images/interface_designer_panes.png" loading='lazy'/></div>
 <p class="img-desc">A screenshot of component interface. Image source: https://docs.appian.com/suite/help/17.3/Interface_Designer.html</p>
-<p>
-My work is to develop the design system, a library of components, supporting a wide range of business processes. I also ship UI features that extend low-code capabilities, such as the responsive feature I am going to write about. 
-</p>
-
+<p>My work is to develop the design system, a library of components, supporting a wide range of business processes. I also ship UI features that extend low-code capabilities, such as the responsive feature I will write.</p>
 <div class="subtitle">Product Design</div>
 <p>Enabling responsive design didn’t come straight as a requirement.
 </p><p>
-We often see our customer struggling in making UIs look good on small screens as it is on desktop. 
-As for the goal of low-code, we attempted to make the UI automatically adapt to screen sizes. 
+We often see our customer struggling in making UIs look good on small screens as it is on desktop.
+As for the goal of low-code, we attempted to make the UI automatically adapt to screen sizes.
 </p>
 <div class="two-columns">
   <p class="left-column">
-  In the past, we provided layout component to automatically stack columns on small screens. 
-  It was helpful in making contents fit on smaller screens. 
-  However, the automated result often fails to place the content as desired on all devices. 
+In the past, we provided layout components to stack columns on small screens automatically. It helped make contents fit on smaller screens. However, the automated result often fails to place the content as desired on all devices.
   </p>
   <div class="image right-column">
     <img alt="" width="300px" src="http://www.dynamicconsultant.org/wp-content/uploads/2017/12/responsive.gif" loading='lazy'/>
@@ -247,28 +239,27 @@ As for the goal of low-code, we attempted to make the UI automatically adapt to 
     Flexibility to create desired UIs on different sized screens.
   </li>
   <li>
-    Integrability to existing component framework.
+    Integrability to the existing component framework.
   </li>
 </ol>
 
-<p class="note"><b>Requirement Gathering Process</b><br>The design goal is usually a compound result of internal requests, customer complains, data metrics and sometimes business partner’s observation. 
-  Engineer department collects these informations, combines related use cases, then translate them into features. </p>
+<p class="note"><b>Requirement Gathering Process</b><br>The design goal is usually a compound result of internal requests, customer complaints, data metrics, and sometimes business partner observation. The Engineer department collects this information, combines related use cases, then translate them into features. </p>
 
-<p>I did competitive analysis on products and technologies help create responsive UIs. Put myself into Appian developer’s shoe to brainstorm the tool that achieves their goals.</p>
+<p>I did Competitive Analysis of products and technologies to help create responsive UIs. Put me into Appian developer's shoes, brainstorm the tool that achieves their goals.</p>
 
 <ul>
   <p>Competitors</p>
   <li>
-    Squarespace. Allows users to configure UIs for different devices in separate tabs. Matches UI designers mental modal. Didn't introduce responsive concept.
+    Squarespace allows users to configure UIs for different devices in separate tabs, matches UI designers' mental modal, and didn't introduce the responsive concept.
   </li>
   <li>
     Salesforce. Configures column width with its percentage to screen width. The values need to match with sibling columns.
   </li>
   <li>
-    Bootstrap. Default to split space with sibling columns. Specified configurations needed to fix width. Uses breakpoint.
+    Bootstrap. Default to split space with sibling columns. Specified configurations are needed to fix the width. Breakpoints are used.
   </li>
   <li>
-    CSS Flexbox. Configuration on both flex layout and items. Learning curve is steep. 
+    CSS Flexbox. Configuration on both flex layout and items. The learning curve is steep.
   </li>
 </ul>
 <p>Comparing the competitors help me pin down the unique needs of Appian users. Adding them to my design goals. </p>
@@ -278,7 +269,7 @@ As for the goal of low-code, we attempted to make the UI automatically adapt to 
     Flexibility to create desired UIs on different sized screens.
   </li>
   <li>
-    Integrability to existing component framework.
+    Integrability to the existing component framework.
   </li>
   <li>
     Easy for non-technical users to start.
@@ -288,26 +279,24 @@ As for the goal of low-code, we attempted to make the UI automatically adapt to 
   </li>
 </ol>
 <div class="subtitle">Interaction design</div>
-<p class="note"><b>Ideation Process</b><br>I usually time-box brainstorming , to generate as many ideas as possible in given time. 
-  Once I have a good number of design options, I start to draft artifacts to present with PMs, designers and directors, or in a shared document to collect feedback from broader audience.</p>
+<p class="note"><b>Ideation Process</b><br>I usually time-box brainstorming to generate as many ideas as possible in a given time. Once I have a good number of design options, I start to draft artifacts to present with PMs, designers, directors, or a shared document to collect feedback from a broader audience.</p>
   <p>I made a list of assumptions in my first round of prototyping, to be verified in later design stages. The assumptions lead to questions that help me dig deeper to understand the users. </p>
 
 <ol>
   <p>Assumptions</p>
   <li>
-    Appian users have basic knowledge of web responsive design. They just want to transform their mobile and desktop design in Sketch into a working UI in the system. 
+    Appian users have basic knowledge of responsive web design. They want to transform their mobile and desktop design in Sketch into a functional UI in the system.
     <br><a class="question">  ➜ How familiar are they with web responsiveness?</a>
   </li>
   <li>
-    Their focus can be one or many screen sizes. They want to make UIs great on their focused device, and usable on other devices when they don't focus on both mobile and desktop.
+    Their focus can be one or many screen sizes. They want to make UIs great on their focused device and usable on other devices when they don't focus on both mobile and desktop.
     <br><a class="question">  ➜ How many configuration steps are they willing to take?</a>
   </li>
   <li>
-    Regular sized phone and desktop are the common use cases. Although there are a variety of device sizes in the market, Appian users shouldn't check their design on all of them.
+    Regular sized phone and desktop are the common use cases. Although there are various device sizes in the market, Appian users shouldn't check their design on all of them.
     <br> <a class="question">  ➜ How many types of screen sizes do they usually care about? </a>
 </ol>
-<p class="note"><b>Prototype Process</b><br>Pens, Sketch, HTML + CSS can all be my prototyping vehicles to present ideas. Pens are good for initial ideation, or response immediately to critiques. 
-  HTML + CSS is to show interactions, give the reviewer a real feel of UI transitions. </p>
+<p class="note"><b>Prototype Process</b><br>Pens, Sketch, HTML + CSS, can all be my prototyping vehicles to present ideas. Pens are good for initial ideation or response immediately to critiques. HTML + CSS is to show interactions, give the reviewer a real feel of UI transitions. </p>
 
 <div class="iteration">First Iteration</div>
 
@@ -316,43 +305,42 @@ As for the goal of low-code, we attempted to make the UI automatically adapt to 
     <p class="idea-text">Idea 1: Configure all attributes in device modes</p>
     <img alt="" width="500px" src="ite1id1.png" loading='lazy'/>
     <p>
-      ✔️ Intuitive for first-time user to create UIs for different devices. <br>
-      ✔️ Immediate preview on selected device, easy to start <br>
+      ✔️ Intuitive for the first-time user to create UIs for different devices. <br>
+      ✔️ Immediate preview on the selected device, easy to start <br>
       ✖️ Plenty of configurations need to be done for each device. <br>
-      ✖️ Hard to implement on existing framework.
+      ✖️ Hard to implement on the existing framework.
     </p>
   </div>
   <div class="idea">
-    <p class="idea-text">Idea 2: Select attribute value for each device width</p>
+    <p class="idea-text">Idea 2: Select attribute value for each device-width</p>
     <img alt="" width="100%" src="ite1id2.png" loading='lazy'/>
     <p>
       ✔️ Hide default configurations, main a clean interface for other attribute settings.<br>
-      ✖️ In the five selection input boxes, three are mobile device. Repetitive selection if one configuration should apply on all mobile device. 
+      ✖️ In the five selection input boxes, three are mobile devices. Repetitive selection if one configuration should apply to all mobile devices.
     </p>
   </div>
   <div class="idea">
-    <p class="idea-text">Explotary idea: Range selection</p>
+    <p class="idea-text">Exploratory idea: Range selection</p>
     <img alt="" width="100%" src="ite1id3.png" loading='lazy'/>
     <p>
       ✔️ Range selection reduces configuration steps.<br>
-      ✖️ High risk. Novel interaction may confuse new users, end up a failure. A lot of usability testing needed. 
+      ✖️ High risk. Novel interaction may confuse new users, end up a failure. A lot of usability testing is needed.
     </p>
   </div>
 </div>
-  
 
-<p>With my first round of prototype presented, I realize stakerholder's expectation on the configuration simplicity is higher than my assumption. I got my assumption questions answered and decided to investigate the range selection idea. I reorganized my goal priority, then move on to the next iteration.
+
+<p>With my first round of prototypes presented, I realize stakerholder's expectation on the configuration simplicity is higher than my assumption. I got my assumption questions answered and decided to investigate the range selection idea. I reorganized my goal priority, then move on to the next iteration.
 </p>
 <ul class="more-padding">
   <p>Design Goal Prioritization</p>
-  <b>Simple configuration > Easy to start > Flexiblity</b><br>
-Since idea 1 is excluded due to implementation difficulty, and the rest has similar development effort, integrability isn’t included in this prioritization. <br>
+  <b>Simple configuration > Easy to start > Flexibility</b><br>
+Since idea 1 is excluded due to implementation difficulty, and the rest has a similar development effort, integrability isn't included. <br>
 </ul>
 
 <p class="note">
-  <b>Feedback is very valuable in my design process</b><br>
-  Presenting the design sparks thoughts in the group. It is another chance for me to explore their needs deep down and refine my design. 
-  In addition, people's questions and concerns push me to perfect my design. Diverse prospetives inspire me to solve problems in innovative ways.
+  <b>Feedback is precious in my design process.</b><br>
+  Presenting the design sparks thoughts in the group. It is another chance for me to explore their needs deep down and refine my design. Besides, people's questions and concerns push me to perfect my UI technique. Diverse perspectives inspire me to solve problems in innovative ways.
 </li>
 </p>
 
@@ -367,29 +355,23 @@ Since idea 1 is excluded due to implementation difficulty, and the rest has simi
     <img alt="" width="100%" src="ite2id2.png" loading='lazy'/>
   </div>
 </div>
-  
+
 
 <ul class="evaluation">
   <p>Design Evaluation</p>
   <li>
-    <b>Self Evaluation</b> I evaluate my design based on the design goals. When multiple goals conflicted to each other, I follow prioritization.
+    <b>Self Evaluation</b> I evaluate my design based on the design goals. When multiple goals conflicted with each other, I follow prioritization.
   </li>
   <li>
-    <b>Guerrilla Testing</b> In the 2nd iteration, both ideas fulfilled the design goals. I did rapid guerrilla testing, found out Idea 2 matches regular user's expection more. </li>
+    <b>Guerrilla Testing</b> In the 2nd iteration, both ideas fulfilled the design goals. I did rapid guerrilla testing, found out Idea 2 matches regular user's expectations more. </li>
   <li>
-    <b>Usability Testing</b> We recruit participants based on their familiarity with our product. 
-    Recruit expert user to test the advanced configuration of one feature. 
-    Recruit new users to test intuitiveness and on-boarding experience of our feature.
+    <b>Usability Testing</b> We recruit participants based on their familiarity with our product. Recruit expert users to test the advanced configuration of one feature. Recruit new users to test the intuitiveness and onboarding experience of our feature.
   </li>
   <li>
-    <b>Dog-fooding</b> When we have a new feature, before shipping to customers, we use it on our internal tools first, and gather first-hand feedback from our employees. 
+    <b>Dogfooding</b> When we have a new feature, before shipping to customers, we use it on our internal tools first, and gather first-hand feedback from our employees.
 </ul>
 <div class="subtitle">Improvement Space</div>
-<p>This design work made me value the importance of first-hand user information, and be extra careful in making assumptions in such cases. 
-  In this cross-platform feature, our data metrics weren't able to provide useful insights. 
-  The feature design heavily relied on partner's observation and design team's experience working with customers. Their narration can be biased or mixed with their assumptions.
-  Asking the right questions to narrators is as important as interviewing an end user. This experience also made me think, firstly to improve the data metrics system, in order to capture holistic information. 
-  Secondly, I hope to develop rapport with partners and customers to get first-hand design insights, in the furture. 
+<p>This design work made me value the importance of first-hand user information and be extra careful in making assumptions in such cases. In this cross-platform feature, our data metrics weren't able to provide useful insights. The feature design heavily relied on the partner's observation and the design team's experience working with customers. Their narration can be biased or mixed with their assumptions. Asking the right questions to narrators is as essential as interviewing an end-user. Firstly, this experience also made me think about improving the data metrics system to capture holistic information. Secondly, I hope to develop a rapport with partners and customers to get first-hand design insights in the future.
 </p>
 
 </body>
