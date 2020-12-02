@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+Pro:ital,wght@0,400;1,300;0,600;&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://liangpuhe.github.io/img/favicon.png" rel="shortcut icon">
+  <style>
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+}
+.headline {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  margin-top: 70px;
+  color: black;
+}
+.header-image {
+  margin-bottom: 100px;
+}
+.content {
+  margin: 150px auto;
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 170%;
+  color: #222;
+  padding-left: 20px;
+}
+
+p{
+  margin-bottom: 50px;
+}
+
+p.img-desc {
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+img.img-border {
+  border-radius: 10px;
+  width: 100%;
+}
+.subtitle {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  font-family: 'Lora', serif;
+}
+br {
+  padding: 20px;
+}
+b {
+  color: black;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #333;
+}
+a:hover {
+  text-decoration-color: #33FFCC;
+}
+a:visited {
+  color: inherit;
+}
+ul, ol {
+  padding: 20px 50px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  background-color: #EEF5F1;
+  color: #003416;
+}
+ul.more-padding {
+  padding-bottom: 40px;
+}
+ul b, ol b {
+  color: #003416;
+  font-weight: 600;
+}
+ul p, ol p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #30B862;
+  font-family: 'Lora', serif;
+  font-size: 22px;
+}
+li {
+  margin-bottom: 10px;
+}
+/* li.grey {
+  color: #A4CDB3;
+} */
+li .question {
+  background-color: #DBEFE3;
+  font-weight: 400;
+  color: #0F592E;
+  text-decoration: none;
+}
+.line {
+  position: absolute;
+  top: 80px;
+  border-top: 4px dotted #333;
+  width: calc( 50% + 300px );
+  /* min-width: 750px; */
+  max-width: 850px;
+  margin: 0 auto 0 calc( 50% - 500px );
+  display: block;
+  justify-content: center;
+}
+
+.download {
+  position: fixed;
+  bottom: 80px;
+  right: calc( 50% - 600px );
+  padding: 5px;
+  border: 4px dotted #333;
+  transition: border-style 0.3s linear;
+  display: none;
+}
+.download:hover {
+  border-style: solid;
+  transform: scale(1.05, 1.05)
+}
+.download > a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.two-columns {
+  display: flex;
+  align-items: center;
+}
+.three-columns {
+  display: flex;
+}
+.left-column {
+  flex-grow: 2;
+  padding-right: 40px;
+}
+.right-column {
+  width: 300px;
+}
+.note {
+  border: dotted #11A748 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 15px 20px;
+  color: #0F592E;
+}
+.note b {
+  color: #0F592E;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+.idea-text {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0F592E;
+  margin-top: 0;
+}
+.idea > p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.iteration {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+.grey {
+  background-color: #fafafa;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 900px) {
+  .line {
+    display: none;
+  }
+}
+
+@media print {
+  .line {
+    display: none;
+  }
+}
+  </style>
+</head>
+
+<body>
+<!-- <div class="line">
+	<img alt="" src="https://liangpuhe.github.io/img/profilec.png" class="avatar" height='140' width='140' loading='lazy'/>
+</div>
+<div class="download">
+  <a href="https://liangpuhe.github.io/Puhe%20Liang.pdf" target="_blank">Download Resume</a>
+</div> -->
+<div class="content">
+<div class="headline">
+Introduce Responsive Design to Low-code Platform
+</div>
+<div class="header-image"><img alt="" width="100%" src="responsive.png" loading='lazy'/></div>
+<div class="subtitle">My role at Appian</div>
+<p>Appian is a low-code platform where business developers can build custom BPM applications without extensive coding. 
+  User-facing interfaces can be easily created by selecting and combining ready-to-use UI components. 
+  The UI components are available with a set of configuration options. 
+  Depending on business needs, components' functions can be configured to display data or trigger a process. The look of the components is also configurable to display in different styles.
+</p>
+<div class="image"><img class="img-border" alt="" src="https://docs.appian.com/suite/help/17.3/images/interface_designer_panes.png" loading='lazy'/></div>
+<p class="img-desc">A screenshot of component interface. Image source: https://docs.appian.com/suite/help/17.3/Interface_Designer.html</p>
+<p>
+My work is to develop the design system, a library of components, supporting a wide range of business processes. I also ship UI features that extend low-code capabilities, such as the responsive feature I am going to write about. 
+</p>
+
+<div class="subtitle">Product Design</div>
+<p>Enabling responsive design didn’t come straight as a requirement.
+</p><p>
+We often see our customer struggling in making UIs look good on small screens as it is on desktop. 
+As for the goal of low-code, we attempted to make the UI automatically adapt to screen sizes. 
+</p>
+<div class="two-columns">
+  <p class="left-column">
+  In the past, we provided layout component to automatically stack columns on small screens. 
+  It was helpful in making contents fit on smaller screens. 
+  However, the automated result often fails to place the content as desired on all devices. 
+  </p>
+  <div class="image right-column">
+    <img alt="" width="300px" src="http://www.dynamicconsultant.org/wp-content/uploads/2017/12/responsive.gif" loading='lazy'/>
+    <p class="img-desc">Image source: http://www.dynamicconsultant.org/responsive-layout-services/</p>
+  </div>
+</div>
+<p>The responsive positioning varies case by case, which can't be determined programmatically.
+  Users need a powerful yet easy-to-use way to configure interfaces that can be used on mobile devices.</p>
+<ol>
+  <p>Design Goals</p>
+  <li>
+    Flexibility to create desired UIs on different sized screens.
+  </li>
+  <li>
+    Integrability to existing component framework.
+  </li>
+</ol>
+
+<p class="note"><b>Requirement Gathering Process</b><br>The design goal is usually a compound result of internal requests, customer complains, data metrics and sometimes business partner’s observation. 
+  Engineer department collects these informations, combines related use cases, then translate them into features. </p>
+
+<p>I did competitive analysis on products and technologies help create responsive UIs. Put myself into Appian developer’s shoe to brainstorm the tool that achieves their goals.</p>
+
+<ul>
+  <p>Competitors</p>
+  <li>
+    Squarespace. Allows users to configure UIs for different devices in separate tabs. Matches UI designers mental modal. Didn't introduce responsive concept.
+  </li>
+  <li>
+    Salesforce. Configures column width with its percentage to screen width. The values need to match with sibling columns.
+  </li>
+  <li>
+    Bootstrap. Default to split space with sibling columns. Specified configurations needed to fix width. Uses breakpoint.
+  </li>
+  <li>
+    CSS Flexbox. Configuration on both flex layout and items. Learning curve is steep. 
+  </li>
+</ul>
+<p>Comparing the competitors help me pin down the unique needs of Appian users. Adding them to my design goals. </p>
+<ol>
+  <p>Design Goals</p>
+  <li>
+    Flexibility to create desired UIs on different sized screens.
+  </li>
+  <li>
+    Integrability to existing component framework.
+  </li>
+  <li>
+    Easy for non-technical users to start.
+  </li>
+  <li>
+    Simple configuration steps.
+  </li>
+</ol>
+<div class="subtitle">Interaction design</div>
+<p class="note"><b>Ideation Process</b><br>I usually time-box brainstorming , to generate as many ideas as possible in given time. 
+  Once I have a good number of design options, I start to draft artifacts to present with PMs, designers and directors, or in a shared document to collect feedback from broader audience.</p>
+  <p>I made a list of assumptions in my first round of prototyping, to be verified in later design stages. The assumptions lead to questions that help me dig deeper to understand the users. </p>
+
+<ol>
+  <p>Assumptions</p>
+  <li>
+    Appian users have basic knowledge of web responsive design. They just want to transform their mobile and desktop design in Sketch into a working UI in the system. 
+    <br><a class="question">  ➜ How familiar are they with web responsiveness?</a>
+  </li>
+  <li>
+    Their focus can be one or many screen sizes. They want to make UIs great on their focused device, and usable on other devices when they don't focus on both mobile and desktop.
+    <br><a class="question">  ➜ How many configuration steps are they willing to take?</a>
+  </li>
+  <li>
+    Regular sized phone and desktop are the common use cases. Although there are a variety of device sizes in the market, Appian users shouldn't check their design on all of them.
+    <br> <a class="question">  ➜ How many types of screen sizes do they usually care about? </a>
+</ol>
+<p class="note"><b>Prototype Process</b><br>Pens, Sketch, HTML + CSS can all be my prototyping vehicles to present ideas. Pens are good for initial ideation, or response immediately to critiques. 
+  HTML + CSS is to show interactions, give the reviewer a real feel of UI transitions. </p>
+
+<div class="iteration">First Iteration</div>
+
+<div class="grey">
+  <div class="idea">
+    <p class="idea-text">Idea 1: Configure all attributes in device modes</p>
+    <img alt="" width="500px" src="ite1id1.png" loading='lazy'/>
+    <p>
+      ✔️ Intuitive for first-time user to create UIs for different devices. <br>
+      ✔️ Immediate preview on selected device, easy to start <br>
+      ✖️ Plenty of configurations need to be done for each device. <br>
+      ✖️ Hard to implement on existing framework.
+    </p>
+  </div>
+  <div class="idea">
+    <p class="idea-text">Idea 2: Select attribute value for each device width</p>
+    <img alt="" width="100%" src="ite1id2.png" loading='lazy'/>
+    <p>
+      ✔️ Hide default configurations, main a clean interface for other attribute settings.<br>
+      ✖️ In the five selection input boxes, three are mobile device. Repetitive selection if one configuration should apply on all mobile device. 
+    </p>
+  </div>
+  <div class="idea">
+    <p class="idea-text">Explotary idea: Range selection</p>
+    <img alt="" width="100%" src="ite1id3.png" loading='lazy'/>
+    <p>
+      ✔️ Range selection reduces configuration steps.<br>
+      ✖️ High risk. Novel interaction may confuse new users, end up a failure. A lot of usability testing needed. 
+    </p>
+  </div>
+</div>
+  
+
+<p>With my first round of prototype presented, I realize stakerholder's expectation on the configuration simplicity is higher than my assumption. I got my assumption questions answered and decided to investigate the range selection idea. I reorganized my goal priority, then move on to the next iteration.
+</p>
+<ul class="more-padding">
+  <p>Design Goal Prioritization</p>
+  <b>Simple configuration > Easy to start > Flexiblity</b><br>
+Since idea 1 is excluded due to implementation difficulty, and the rest has similar development effort, integrability isn’t included in this prioritization. <br>
+</ul>
+
+<p class="note">
+  <b>Feedback is very valuable in my design process</b><br>
+  Presenting the design sparks thoughts in the group. It is another chance for me to explore their needs deep down and refine my design. 
+  In addition, people's questions and concerns push me to perfect my design. Diverse prospetives inspire me to solve problems in innovative ways.
+</li>
+</p>
+
+<div class="iteration">Second Iteration</div>
+<div class="grey">
+  <div class="idea">
+    <p class="idea-text">Idea 1</p>
+    <img alt="" width="500px" src="ite2id1.png" loading='lazy'/>
+  </div>
+  <div class="idea">
+    <p class="idea-text">Idea 2</p>
+    <img alt="" width="100%" src="ite2id2.png" loading='lazy'/>
+  </div>
+</div>
+  
+
+<ul class="evaluation">
+  <p>Design Evaluation</p>
+  <li>
+    <b>Self Evaluation</b> I evaluate my design based on the design goals. When multiple goals conflicted to each other, I follow prioritization.
+  </li>
+  <li>
+    <b>Guerrilla Testing</b> In the 2nd iteration, both ideas fulfilled the design goals. I did rapid guerrilla testing, found out Idea 2 matches regular user's expection more. </li>
+  <li>
+    <b>Usability Testing</b> We recruit participants based on their familiarity with our product. 
+    Recruit expert user to test the advanced configuration of one feature. 
+    Recruit new users to test intuitiveness and on-boarding experience of our feature.
+  </li>
+  <li>
+    <b>Dog-fooding</b> When we have a new feature, before shipping to customers, we use it on our internal tools first, and gather first-hand feedback from our employees. 
+</ul>
+<div class="subtitle">Improvement Space</div>
+<p>This design work made me value the importance of first-hand user information, and be extra careful in making assumptions in such cases. 
+  In this cross-platform feature, our data metrics weren't able to provide useful insights. 
+  The feature design heavily relied on partner's observation and design team's experience working with customers. Their narration can be biased or mixed with their assumptions.
+  Asking the right questions to narrators is as important as interviewing an end user. This experience also made me think, firstly to improve the data metrics system, in order to capture holistic information. 
+  Secondly, I hope to develop rapport with partners and customers to get first-hand design insights, in the furture. 
+</p>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" /></script>
+
+<script>
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 400) {
+    $('.download').fadeIn();
+    var scrollHeight = $(document).height();
+  	var scrollPosition = $(window).height() + $(window).scrollTop();
+  } else {
+    $('.download').fadeOut();
+  }
+});
+</script>
+</html>
