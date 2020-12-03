@@ -10,7 +10,7 @@
 }
 
 body {
- font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
+ font-family: 'Mukta', sans-serif;
  font-weight: 400;
  /* color:#545454; */
  color: black;
@@ -31,31 +31,54 @@ body {
 }
 
 .headline {
-  display: block;
-  margin-bottom: 30px;
-  font-weight: 300;
-  font-size: 24px;
-  font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 800;
+  font-size: 34px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.work, .fun {
-  margin-bottom: 40px;
-  display: table-cell;
+.title {
+  display: inline;
+  color: #545454;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .header {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #9c9c9c;
 }
 
 .work {
   width: 410px;
 }
 
-.fun {
-  width: 240px;
-  margin-right: 60px;
+.list {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.list a {
+  color: black;
+}
+
+.list a:hover {
+  text-decoration-color: #0300FF;
+  color: #0300FF
+}
+
+.exp {
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: #545454;
 }
 
 .memoji {
@@ -71,32 +94,42 @@ body {
 
 .download {
   margin-top: 30px;
-  font-family: 'Karla', 'Lato', 'Open Sans', sans-serif;
-
-  /* display: flex;
-  width: 125px;
-  height: 45px;
-  background-color: #7DDCA0;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px transparent; */
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  
 }
 
-.download > a:hover {
-  /* border: solid 2px black; */
-  background-position: 0% 100%;
+
+
+/* .download > a:hover {
+  background-position: 0% 70%;
+  background-size: 100% 40%;
 
 }
 
 .download > a {
   text-decoration: none;
   color: black;
-  font-weight: 300;
-  background-image: linear-gradient(to top, #7DDCA0 80%, transparent 0%, transparent);
+  background-image: linear-gradient(to top, #0300FF 90%, transparent 0%, transparent);
   background-repeat: no-repeat;
-  background-size: 100% 50%;
-  background-position: 0% 120%;
+  background-size: 100% 20%;
+  background-position: 0% 80%;
   transition: all .1s ease-in
+} */
+
+.download > a {
+  text-decoration: none;
+  color: black;
+  background-image: linear-gradient(to right, #0300FF 100%, transparent 0%, transparent);
+  background-repeat: no-repeat;
+  background-size: 0% 15%;
+  background-position: 0% 80%;
+  transition: all .1s ease-in;
+}
+
+.download > a:hover {
+  background-size: 100% 15%;
 }
 
 
