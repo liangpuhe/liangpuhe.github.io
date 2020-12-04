@@ -19,14 +19,15 @@ body {
 
 .content {
   position: relative;
-  top: 20vh;
+  top: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10vh;
 }
 
 .intro {
-  width: 650px;
+  width: 450px;
   margin-right: 30px;
 }
 
@@ -97,7 +98,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   color: black;
-  
+
 }
 
 
