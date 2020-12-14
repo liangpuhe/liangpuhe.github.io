@@ -57,10 +57,16 @@ function setEmojiViz(cTemp) {
     default:
       str = ""
   };
-  // emoji.text(str).fadeIn(500);
-  emoji.fadeOut(500, function() {
-       $(this).text(str).fadeIn(500);
-   });
+
+  if (str !== "") {
+    emoji.fadeOut(100, function(){
+      $(this).text(str).show();
+      $(this).animate({fontSize: "110px"}, 150)
+        .animate({fontSize: "100px"}, 50)
+    });
+  } else {
+    $(this).text(str).show();
+  }
 }
 
 function setTemperatureViz(cTemp) {
@@ -79,7 +85,7 @@ function celsiusToFahrenheit() {
   // result.html(roundedFTemp);
   // result.css("color", "#fa7676");
   setTemperatureViz(cTemp);
-  setEmojiViz(cTemp);
+  timer = setTimeout(setEmojiViz, typingInterval, cTemp);
   if (isNaN(frInput.val())) {
       frInput.val('');
   }
@@ -93,7 +99,7 @@ function fahrenheitToCelsius() {
   // result.html(roundedCTemp);
   // result.css("color", "#329cfc");
   setTemperatureViz(cTemp);
-  setEmojiViz(cTemp);
+  timer = setTimeout(setEmojiViz, typingInterval, cTemp);
   if (isNaN(celInput.val())) {
       celInput.val('');
   }
@@ -103,7 +109,15 @@ function convert() {
   frInput.keyup(() => {
     fahrenheitToCelsius();
   });
+  frInput.keydown(() => {
+    clearTimeout(timer);
+  })
+
   celInput.keyup(() => {
     celsiusToFahrenheit();
   });
+  celInput.keydown(() => {
+    clearTimeout(timer);
+  })
+  
 }

@@ -6,6 +6,7 @@
 </head>
 
 <body>
+
 <div class="text-body">
 <div class="text-background">
 <div class="headline">
@@ -40,7 +41,8 @@
   <!-- <div><p id="result"></p></div> -->
 </div>
 </div>
-<div id="emoji" class="emoji"></div>
+<div id="emoji" class="emoji">
+</div>
 </div>
 <div class="viz">
   <img class="thermometer" src="thermometer.png"/>
@@ -49,6 +51,7 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="script.js" />
   </script>
   <script>
@@ -57,6 +60,8 @@
     const result = $("#result");
     const emoji = $("#emoji");
     const temp = $("#temperature");
+    var timer;
+    var typingInterval = 1000;
     convert();
   </script>
   </html>
