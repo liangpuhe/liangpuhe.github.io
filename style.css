@@ -52,7 +52,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 15px;
-  margin-top: 40px;
+  margin-top: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #9c9c9c;
@@ -76,6 +76,17 @@ body {
   color: #0300FF
 }
 
+.design .list {
+  margin-bottom: 15px;
+}
+
+.design .list a {
+  margin-right: 15px;
+}
+.design {
+  /* margin-left: 150px; */
+}
+
 .exp {
   margin-bottom: 15px;
   font-weight: 300;
@@ -87,14 +98,13 @@ body {
   width: 240px;
 }
 
-.divider {
-  width: 1px;
-  background-color: #545454;
-  height: 100%;
+.two-columns {
+  display: flex;
+  width: 1000px;
 }
 
 .download {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 20px;
   font-weight: 400;
   color: black;
