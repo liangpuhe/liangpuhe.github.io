@@ -111,23 +111,17 @@ body {
 
 }
 
-
-
-/* .download > a:hover {
-  background-position: 0% 70%;
-  background-size: 100% 40%;
-
+.codepen {
+  fill: #545454;
+  position: relative;
+  left: 6px;
+  top: 2.5px;
 }
 
-.download > a {
-  text-decoration: none;
-  color: black;
-  background-image: linear-gradient(to top, #0300FF 90%, transparent 0%, transparent);
-  background-repeat: no-repeat;
-  background-size: 100% 20%;
-  background-position: 0% 80%;
-  transition: all .1s ease-in
-} */
+.codepen:hover {
+  transform: scale(1.1);
+  fill: #0300FF;
+}
 
 .download > a {
   text-decoration: none;
