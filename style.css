@@ -12,7 +12,6 @@
 body {
  font-family: 'Mukta', sans-serif;
  font-weight: 400;
- /* color:#545454; */
  color: black;
  font-size: 16px;
 }
@@ -23,13 +22,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
-.intro {
+.projects {
+  display: flex;
+  justify-content: left;
+  width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
   width: 450px;
   margin-right: 30px;
 }
+
 
 .headline {
   display: inline-block;
@@ -62,6 +70,7 @@ body {
   width: 410px;
 }
 
+
 .list {
   font-size: 20px;
   line-height: 1.2;
@@ -73,8 +82,18 @@ body {
 
 .list a:hover {
   text-decoration-color: #0300FF;
+}
+
+.list.no-underline a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.list.no-underline a:hover {
+  text-decoration: none;
   color: #0300FF
 }
+
 
 .design .list {
   margin-bottom: 15px;
@@ -83,8 +102,9 @@ body {
 .design .list a {
   margin-right: 15px;
 }
+
 .design {
-  /* margin-left: 150px; */
+  width: 500px;
 }
 
 .exp {
@@ -95,12 +115,7 @@ body {
 
 .memoji {
   display: inline-flex;
-  width: 240px;
-}
-
-.two-columns {
-  display: flex;
-  width: 1000px;
+  width: 280px;
 }
 
 .download {
@@ -151,5 +166,10 @@ body {
 @media only screen and (max-width:700px) {
   .memoji {
     display: none;
+  }
+
+  .projects {
+    flex-direction: column;
+    width: 480px;
   }
 }
